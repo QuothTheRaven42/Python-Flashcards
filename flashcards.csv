@@ -1,0 +1,101 @@
+question,a,b,c,d,answer,category,times_missed
+What is the result of type([]) in Python?,<class 'set'>,<class 'dict'>,<class 'list'>,<class 'tuple'>,c,data_types,0
+Which of these is an immutable data type?,set,tuple,dictionary,list,b,data_types,0
+What does len('hello') return?,4,3,6,5,d,strings,0
+What is the output of bool(0)?,1,False,True,None,b,data_types,0
+Which method converts a string to all uppercase?,str.to_upper(),str.upper(),str.capitalize(),str.cap(),b,strings,0
+What does the % operator do in Python?,Divides two numbers,Returns the quotient,Returns the remainder of division,Raises to a power,c,operators,0
+What is the result of 3 ** 2 in Python?,6,9,8,5,b,operators,0
+How do you start a comment in Python?,//,/*,#,--,c,syntax,0
+What does range(3) produce?,"[1, 2]","[1, 2, 3]","[0, 1, 2, 3]","[0, 1, 2]",d,built_ins,0
+What is the correct way to define a function in Python?,define myFunc():,func myFunc():,def myFunc():,function myFunc():,c,functions,0
+What does None represent in Python?,An empty string,The absence of a value,A false value,The number zero,b,data_types,0
+Which of these creates an empty dictionary?,(),set(),{},[],c,dictionaries,0
+What is string slicing?,Replacing part of a string,Splitting a string into a list,Converting a string to lowercase,Extracting a substring using index notation,d,strings,0
+What does 'hello'[1] return?,e,h,l,o,a,strings,0
+What is the output of print(type(3.14))?,<class 'float'>,<class 'double'>,<class 'int'>,<class 'number'>,a,data_types,0
+Which keyword is used to handle exceptions?,catch,try,handle,error,b,error_handling,0
+What does the pass statement do?,Does nothing; acts as a placeholder,Exits a loop,Skips a loop iteration,Raises an exception,a,syntax,0
+How do you check the number of items in a list called mylist?,len(mylist),mylist.count(),mylist.size(),count(mylist),a,lists,0
+What does list.pop() do by default?,Removes and returns the last item,Removes a random item,Removes the first item,Clears the list,a,lists,0
+Which of these is the correct way to import a module?,require math,import math,include math,using math,b,modules,0
+What does the 'break' statement do in a loop?,Skips the current iteration,Pauses execution,Exits the loop immediately,Restarts the loop,c,control_flow,0
+What does the 'continue' statement do?,Exits the loop,Skips the rest of the current iteration and moves to the next,Restarts the loop from the top,Raises an error,b,control_flow,0
+What is the output of 'hello' + 'world'?,helloworld,error,hello+world,hello world,a,strings,0
+What does str.split() do with no arguments?,Splits on whitespace,Raises an error,Splits on commas,Splits into individual characters,a,strings,0
+Which built-in function returns the largest value in a list?,max(),high(),largest(),top(),a,built_ins,0
+What does sorted() return?,It sorts the list in place,A new sorted list,A sorted tuple,A sorted set,b,built_ins,0
+What is a lambda function?,A class method,A function with no return value,A recursive function,An anonymous function defined in a single line,d,functions,0
+What does enumerate() do?,Returns the length of an iterable,Converts a list to a dictionary,Returns index-value pairs when iterating,Sorts an iterable,c,built_ins,0
+What is the difference between '==' and 'is'?,They are identical,'is' checks value equality; '==' checks identity,'is' only works with strings,'==' checks value equality; 'is' checks identity,d,operators,0
+What does dict.keys() return?,A list of key-value pairs,A view of all keys in the dictionary,A list of values,A sorted list of keys,b,dictionaries,0
+What does dict.values() return?,A view of all values in the dictionary,A list of key-value pairs,A sorted list of values,A list of keys,a,dictionaries,0
+What does dict.items() return?,A list of values,A sorted dictionary,A list of keys,A view of key-value pairs as tuples,d,dictionaries,0
+Which of these creates a set?,set = [],set = {},"set = (1, 2, 3)","set = {1, 2, 3}",d,data_types,0
+What is unique about sets in Python?,They are immutable,They are ordered,They allow duplicate values,They contain only unique values,d,data_types,0
+What does list.append() do?,Inserts an element at a given index,Adds each element of an iterable individually,Adds a single element to the end,Adds an element to the beginning,c,lists,0
+What is a docstring?,A string literal used to document a function or class,A multiline variable,A comment inside a loop,A type of string formatting,a,functions,0
+What does the 'global' keyword do?,Deletes a variable,Converts a local variable to a constant,Allows a function to access and modify a variable from the global scope,Creates a new global variable,c,functions,0
+What does zip() do?,Combines two or more iterables into tuples,Flattens a nested list,Compresses files,Sorts two lists simultaneously,a,built_ins,0
+What does isinstance() do?,Converts an object to a class,Checks if an object is an instance of a given class,Returns the type of an object,Checks if two objects are identical,b,OOP,0
+What is a constructor in Python?,The __init__ method,The __del__ method,The __new__ method,The __str__ method,a,OOP,0
+What does 'self' refer to in a class method?,The current instance of the class,The module the class is in,The parent class,The class itself,a,OOP,0
+What is inheritance in OOP?,When two classes share the same name,A class that cannot be modified,When a method calls itself,When a class adopts attributes and methods from another class,d,OOP,0
+What does super() do?,Deletes the parent class,Overrides all parent methods,Creates a new subclass,Calls a method from the parent class,d,OOP,0
+What is polymorphism in Python?,The ability of different objects to be used interchangeably through a shared interface,When a function calls itself,When a class inherits from multiple parents,When a class has multiple constructors,a,OOP,0
+What is encapsulation?,When a function is wrapped by a decorator,The ability of a class to inherit from multiple parents,Bundling data and methods within a class and restricting direct access,When a method returns self,c,OOP,0
+What does a single underscore prefix on a method mean (e.g. _method)?,It is private and cannot be accessed at all,It is a class method,It is a convention indicating it is intended for internal use,It is a magic method,c,OOP,0
+What does a double underscore prefix on an attribute do (e.g. __attr)?,Makes it public,"Triggers name mangling, making it harder to access from outside the class",Marks it as deprecated,Makes it a class variable,b,OOP,0
+What is the purpose of __str__?,To define the string representation shown to end users,To delete an instance,To define what is returned when repr() is called,To initialize an instance,a,OOP,0
+What is the purpose of __repr__?,To initialize an instance,To compare two objects,To define the string shown to end users,To define an unambiguous string representation for developers,d,OOP,0
+What does @property allow you to do?,Create a read-only class,Define a class method,Access a method like an attribute,Make a method static,c,OOP,0
+What does @staticmethod indicate?,The method belongs to an instance,The method receives cls as its first argument,The method cannot be called from an instance,The method does not receive self or cls,d,OOP,0
+What does @classmethod indicate?,The method is private,The method receives self as its first argument,The method receives cls as its first argument,The method is inherited automatically,c,OOP,0
+What is a generator?,A type of class,A built-in that creates ranges,A function that uses yield to lazily produce values one at a time,A function that returns a list,c,generators,0
+What keyword turns a function into a generator?,generate,return,next,yield,d,generators,0
+What does next() do with a generator?,Returns the next value from the generator,Returns all remaining values,Converts the generator to a list,Resets the generator,a,generators,0
+What is a list comprehension?,A way to flatten a nested list,A way to sort a list in place,A concise syntax for building a list using a loop,A method to copy a list,c,comprehensions,0
+What is a dictionary comprehension?,A way to sort a dictionary,A way to invert a dictionary,A concise syntax for building a dictionary using a loop,A method to merge two dictionaries,c,comprehensions,0
+How does a generator expression differ from a list comprehension?,It uses parentheses and produces values lazily,It uses square brackets,It is always faster,It produces all values at once,a,generators,0
+What does a decorator do?,Renames a function,Deletes a function after use,Wraps a function to add behavior before or after it runs,Adds color to terminal output,c,functions,0
+What is the @ symbol used for in Python?,String formatting,Modulo operation,Matrix multiplication or applying a decorator,Bitwise AND,c,functions,0
+What does *args allow in a function?,Any number of positional arguments,Only string arguments,Exactly two positional arguments,Any number of keyword arguments,a,functions,0
+What does **kwargs allow in a function?,Exactly one keyword argument,Any number of keyword arguments,Only integer keyword arguments,Any number of positional arguments,b,functions,0
+What is a closure?,A class with no methods,A decorator with no arguments,A function that remembers variables from its enclosing scope even after that scope has closed,A function that raises an exception,c,functions,0
+What does the open() function return?,A string,A list of lines,A bytes object,A file object,d,file_io,0
+"What mode string opens a file for writing, creating it if it doesn't exist?",'r','x','w','a',c,file_io,0
+What mode string opens a file for appending?,'w','rw','r','a',d,file_io,0
+What is the purpose of using 'with' when opening a file?,It loads the entire file into memory,It opens the file faster,It prevents other programs from opening the file,It automatically closes the file when the block exits,d,file_io,0
+What does file.read() do?,Reads a fixed number of bytes,Reads one line,Reads all lines into a list,Reads the entire file as a string,d,file_io,0
+What does file.readlines() do?,Reads only the first line,Reads the file one character at a time,Reads all lines into a list,Reads the entire file as a string,c,file_io,0
+What exception is raised when a file is not found?,FileNotFoundError,IOError,OSError,FileError,a,error_handling,0
+What exception is raised when dividing by zero?,ZeroDivisionError,ValueError,DivisionError,MathError,a,error_handling,0
+What exception is raised when accessing an index that doesn't exist?,ValueError,TypeError,KeyError,IndexError,d,error_handling,0
+What exception is raised when a dictionary key doesn't exist?,IndexError,KeyError,ValueError,AttributeError,b,error_handling,0
+What does the 'finally' block do in a try/except?,Suppresses exceptions,Always runs regardless of whether an exception occurred,Runs only if no exception occurs,Runs only if an exception occurs,b,error_handling,0
+What does the 'raise' keyword do?,Suppresses an exception,Manually triggers an exception,Logs an exception,Catches an exception,b,error_handling,0
+What is the purpose of the 'else' clause in a try/except block?,Suppresses the exception,Runs only if no exception was raised,Runs if an exception occurs,Always runs,b,error_handling,0
+What does import os allow you to do?,Create GUIs,Interact with the operating system,Open database connections,Connect to the internet,b,modules,0
+What does os.path.exists() do?,Returns the size of a file,Creates a file,Deletes a file,Checks whether a file or directory exists,d,modules,0
+What does the json module's json.loads() do?,Parses a JSON string into a Python object,Converts a Python object to a JSON string,Validates JSON syntax,Writes a Python object to a JSON file,a,modules,0
+What does json.dumps() do?,Reads a JSON file,Converts a Python object to a JSON string,Deletes a JSON file,Parses a JSON string into a Python object,b,modules,0
+What does the random module's random.choice() do?,Returns a random element from a sequence,Shuffles a list,Returns a random integer,Returns a random float,a,modules,0
+"What does random.randint(1, 10) do?",Returns a random float between 1 and 10,Returns a random integer between 1 and 10 inclusive,Returns a random integer between 0 and 10,Returns a random integer between 1 and 9,b,modules,0
+What does the 'in' operator do when used with a dictionary?,Iterates over all items,Checks if a key-value pair exists,Checks if a value exists,Checks if a key exists,d,operators,0
+What is method chaining?,Calling multiple methods on the same object in sequence,Defining methods inside other methods,Importing methods from another module,Calling a method on a parent class,a,OOP,0
+What does str.strip() do?,Removes all spaces,Removes leading and trailing whitespace,Splits a string,Converts to lowercase,b,strings,0
+What does str.replace() do?,Replaces occurrences of a substring with another string,Finds a substring,Removes whitespace,Splits a string on a delimiter,a,strings,0
+What does str.join() do?,Splits a string into a list,Finds the index of a substring,Combines a list of strings using the string as a separator,Adds a string to another string,c,strings,0
+What does str.find() return if the substring is not found?,None,It raises an error,0,-1,d,strings,0
+What is the difference between list.sort() and sorted()?,sorted() sorts in place; list.sort() returns a new list,list.sort() only works on numbers,They are identical,list.sort() sorts in place and returns None; sorted() returns a new sorted list,d,lists,0
+"What does list.insert(i, x) do?",Removes the element at index i and replaces it with x,Inserts x at position i,Replaces the element at index i with x,Appends x to the list,b,lists,0
+What does list.remove() do?,Removes the item at a given index,Clears the list,Removes the first occurrence of a given value,Removes the last item,c,lists,0
+What is the difference between remove() and pop()?,They are identical,remove() takes a value; pop() takes an index and returns the removed item,remove() takes an index; pop() takes a value,pop() raises an error if the item is not found,b,lists,0
+What does set.add() do?,Merges two sets,Adds a single element to the set,Converts a list to a set,Adds multiple elements,b,data_types,0
+What does the union of two sets return?,All unique elements from both sets,Elements in both sets,Elements only in the first set,Elements in neither set,a,data_types,0
+What does the intersection of two sets return?,Elements only in the first set,All unique elements from both sets,Elements in neither set,Elements that exist in both sets,d,data_types,0
+What is a shallow copy?,A copy made with the copy module,A reference to the same object,An identical duplicate of an object including all nested objects,"A copy that only duplicates the outer object, with nested objects still shared",d,data_structures,0
+What is the MRO in Python?,Module Registration Object,Main Runtime Object,Method Resolution Order — the order Python searches for methods in inheritance,Memory Read Order,c,OOP,0
+What does the __len__ dunder method allow?,Defining string representation,Iterating over an object,Comparing two objects,Using len() on a custom object,d,OOP,0
+What does the __eq__ dunder method define?,How an object is copied,How an object is printed,How two objects are compared with ==,How an object is deleted,c,OOP,0
+What is an abstract class?,A class imported from another module,A class that cannot be instantiated and is meant to be subclassed,A class with no attributes,A class with only static methods,b,OOP,0
