@@ -39,7 +39,7 @@ question,a,b,c,d,answer,category,times_missed
 
 ## Usage
 ```bash
-cd python-flashcards
+cd Python-Flashcards
 python main.py
 ```
 
