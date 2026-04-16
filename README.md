@@ -38,9 +38,9 @@ question,a,b,c,d,answer,category,times_missed
 ```
 
 ## Usage
-
-```
-python flashcards.py
+```bash
+cd markov-poetry-generator
+python main.py
 ```
 
 You'll be shown a list of available categories and prompted to choose one or enter `all`. The quiz then runs through 10 random questions from your selection. After the session, the CSV is updated with any incremented miss counts.
