@@ -39,7 +39,7 @@ question,a,b,c,d,answer,category,times_missed
 
 ## Usage
 ```bash
-cd markov-poetry-generator
+cd python-flashcards
 python main.py
 ```
 
