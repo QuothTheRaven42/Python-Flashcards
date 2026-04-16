@@ -34,7 +34,7 @@ The tool reads from a file called `flashcards.csv` in the same directory as the 
 
 ```
 question,a,b,c,d,answer,category,times_missed
-What does len() return?,The last item,The length,A sorted list,Nothing,b,Python Basics,0
+"What is the output of (lambda x, y: x + y)(3, 4)?",34,Error,12,7,d,functions,0
 ```
 
 ## Usage
