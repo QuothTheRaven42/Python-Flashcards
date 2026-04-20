@@ -78,6 +78,8 @@ if __name__ == "__main__":
 
 
 """
+In Development:
+
 Spaced repetition algorithm (highest value)
 Right now times_missed is tracked but not really used for anything. 
 The natural evolution is to weight card selection by that field — cards missed more often appear more frequently. 
