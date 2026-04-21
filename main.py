@@ -106,8 +106,7 @@ Spaced repetition algorithm (highest value)
 Right now times_missed is tracked but not really used for anything. 
 The natural evolution is to weight card selection by that field — cards missed more often appear more frequently. 
 Even a simple implementation (sort by times_missed descending, bias the shuffle toward the top) demonstrates you understand data-driven logic. 
-A real spaced repetition system like SM-2 would be even more impressive and is well-documented, 
-but even a homegrown weighted shuffle shows intentionality.
+A real spaced repetition system like SM-2 would be even more impressive and is well-documented.
 
 Session history / stats tracking
 A separate stats.csv or JSON file that logs each session — date, topic, score, number of questions — 
