@@ -79,10 +79,5 @@ A --list flag to show all categories and card counts is also low effort but show
 The input()-based topic selection works but is fragile and not how real tools behave. 
 Replacing it with argparse — so you can do python flashcards.py --topic Python --questions 15 — is a small change with a big signal. It's also more testable.
 
-**Weak card review mode**
-A --review flag that pulls only cards above a times_missed threshold (say, missed 3+ times) and drills just those. 
-Combines the existing data with purposeful filtering — feels like a feature a real user would want.
-
 **Pytest coverage**
-Your Markov project has tests and a GitHub Actions workflow, which is already a strong signal. 
 Bringing the same treatment here — testing the shuffle logic, the CSV read/write, the scoring calculation — makes the portfolio consistent and shows the tests weren't a one-off.
