@@ -6,7 +6,7 @@ A command-line flashcard quiz tool that reads from a CSV file, lets you filter b
 
 - Filter questions by category or quiz on all topics at once
 - 10 questions per session, shuffled randomly
-- 445 questions included in flashcards.csv
+- 555 questions included in flashcards.csv
 - Multiple choice answers (a/b/c/d) with input validation
 - Tracks missed answers persistently — the CSV is updated after every session
 - Displays your score as a percentage at the end
