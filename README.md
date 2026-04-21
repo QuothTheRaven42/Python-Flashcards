@@ -62,18 +62,10 @@ You'll be asked how many questions you want to review. Then you'll be shown a li
 Right now times_missed is tracked but not really used for anything. 
 The natural evolution is to weight card selection by that field — cards missed more often appear more frequently. 
 Even a simple implementation (sort by times_missed descending, bias the shuffle toward the top) demonstrates you understand data-driven logic. 
-A real spaced repetition system like SM-2 would be even more impressive and is well-documented, 
-but even a homegrown weighted shuffle shows intentionality.
 
 **Session history / stats tracking**
 A separate stats.csv or JSON file that logs each session — date, topic, score, number of questions — 
 lets you add a --history flag that shows performance trends over time. 
-"Your Python score has improved from 60% to 85% over 6 sessions" is the kind of output that makes the tool feel alive rather than stateless.
-
-**Card management commands**
-Right now cards can only be added by manually editing the CSV. 
-A simple --add mode that walks the user through entering a new question, answers, and category via prompts would make it self-contained. 
-A --list flag to show all categories and card counts is also low effort but shows CLI design thinking.
 
 **argparse for proper CLI interface**
 The input()-based topic selection works but is fragile and not how real tools behave. 
