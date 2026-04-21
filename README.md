@@ -58,7 +58,7 @@ You'll be asked how many questions you want to review. Then you'll be shown a li
 
 ## In Development:
 
-**Input validation and edge-case handling**
+**Input validation and edge-case handling**  
 Right now some inputs can crash the program or create empty quiz sessions.
 I want to tighten up topic selection, question count input, and no-results cases so the app behaves more reliably.
 
