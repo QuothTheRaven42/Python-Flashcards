@@ -48,7 +48,7 @@ cd Python-Flashcards
 python main.py
 ```
 
-You'll be shown a list of available categories and prompted to choose one or enter `all`. The quiz then runs through 10 random questions from your selection. After the session, the CSV is updated with any incremented miss counts.
+You'll be asked how many questions you want to review. Then you'll be shown a list of available categories and prompted to choose one, or you can enter `all` or `missed`. The quiz then runs through random questions based your selections. After the session, the CSV is updated with any incremented miss counts.
 
 ## Notes
 
