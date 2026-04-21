@@ -35,7 +35,11 @@ The tool reads from a file called `flashcards.csv` in the same directory as the 
 
 ```
 question,a,b,c,d,answer,category,times_missed
-"What is the output of (lambda x, y: x + y)(3, 4)?",34,Error,12,7,d,functions,0
+What does 'hello'[1] return?,e,h,l,o,a,strings,0,,
+What is the output of bool(None)?,True,0,Error,False,d,data_types,0,,
+What is the output of 'Python'[1:4]?,Pyt,yth,ytho,Pyth,b,strings,0,,
+What exception is raised when a dictionary key doesn't exist?,IndexError,KeyError,ValueError,AttributeError,b,error_handling,0,,
+What does 'abc' * 3 produce?,An error,abcabcabc,abc3,['abc',abc,'abc'],b,strings,0
 ```
 
 ## Usage
