@@ -58,30 +58,30 @@ You'll be asked how many questions you want to review. Then you'll be shown a li
 
 ## In Development:
 
-**Input validation and edge-case handling**  
+-**Input validation and edge-case handling**  
 Right now some inputs can crash the program or create empty quiz sessions.
 I want to tighten up topic selection, question count input, and no-results cases so the app behaves more reliably.
 
-**Retry missed questions**  
+-**Retry missed questions**  
 A useful next step is letting the user review the questions they got wrong at the end of a session.
 That would make the tool more practical for studying and build on the times_missed logic already in place.
 
-**Session history / stats tracking**  
+-**Session history / stats tracking**  
 I’d like to log each quiz session to a separate CSV or JSON file with the date, topic, score, and number of questions.
 That would make it possible to view recent performance and track improvement over time.
 
-**Hardest cards report**  
+-**Hardest cards report**  
 Since times_missed is already being tracked, I want to use it to show which cards are missed most often.
 A simple report of the most-missed questions would make the app feel more data-driven and useful.
 
-**Spaced repetition algorithm**  
+-**Spaced repetition algorithm**  
 Right now times_missed is tracked but not really used for anything.
 The natural next step is to weight card selection by that field so cards missed more often appear more frequently.
 
-**Add / edit / delete flashcards**  
+-**Add / edit / delete flashcards**  
 At the moment, the program can quiz from a CSV, but managing cards still has to be done manually.
 Adding command-line options for creating, editing, and deleting flashcards would make it feel more like a complete tool.
 
-**argparse for proper CLI interface**  
+-**argparse for proper CLI interface**  
 The current input()-based flow works, but it’s fragile and not how real command-line tools usually behave.
 Replacing parts of it with argparse would allow commands like python flashcards.py --topic Python --questions 15 and make the script easier to test and extend.
