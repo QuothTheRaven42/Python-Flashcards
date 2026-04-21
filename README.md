@@ -6,6 +6,7 @@ A command-line flashcard quiz tool that reads from a CSV file, lets you filter b
 
 - Filter questions by category or quiz on all topics at once
 - 10 questions per session, shuffled randomly
+- 555 questions included in flashcards.csv
 - Multiple choice answers (a/b/c/d) with input validation
 - Tracks missed answers persistently — the CSV is updated after every session
 - Displays your score as a percentage at the end
@@ -34,7 +35,11 @@ The tool reads from a file called `flashcards.csv` in the same directory as the 
 
 ```
 question,a,b,c,d,answer,category,times_missed
-"What is the output of (lambda x, y: x + y)(3, 4)?",34,Error,12,7,d,functions,0
+What does 'hello'[1] return?,e,h,l,o,a,strings,0,,
+What is the output of bool(None)?,True,0,Error,False,d,data_types,0,,
+What is the output of 'Python'[1:4]?,Pyt,yth,ytho,Pyth,b,strings,0,,
+What exception is raised when a dictionary key doesn't exist?,IndexError,KeyError,ValueError,AttributeError,b,error_handling,0,,
+What does 'abc' * 3 produce?,An error,abcabcabc,abc3,['abc',abc,'abc'],b,strings,0
 ```
 
 ## Usage
@@ -43,7 +48,7 @@ cd Python-Flashcards
 python main.py
 ```
 
-You'll be shown a list of available categories and prompted to choose one or enter `all`. The quiz then runs through 10 random questions from your selection. After the session, the CSV is updated with any incremented miss counts.
+You'll be asked how many questions you want to review. Then you'll be shown a list of available categories and prompted to choose one, or you can enter `all` or `missed`. The quiz then runs through random questions based your selections. After the session, the CSV is updated with any incremented miss counts.
 
 ## Notes
 
@@ -74,10 +79,5 @@ A --list flag to show all categories and card counts is also low effort but show
 The input()-based topic selection works but is fragile and not how real tools behave. 
 Replacing it with argparse — so you can do python flashcards.py --topic Python --questions 15 — is a small change with a big signal. It's also more testable.
 
-**Weak card review mode**
-A --review flag that pulls only cards above a times_missed threshold (say, missed 3+ times) and drills just those. 
-Combines the existing data with purposeful filtering — feels like a feature a real user would want.
-
 **Pytest coverage**
-Your Markov project has tests and a GitHub Actions workflow, which is already a strong signal. 
 Bringing the same treatment here — testing the shuffle logic, the CSV read/write, the scoring calculation — makes the portfolio consistent and shows the tests weren't a one-off.
