@@ -115,7 +115,4 @@ lets you add a --history flag that shows performance trends over time.
 argparse for proper CLI interface
 The input()-based topic selection works but is fragile and not how real tools behave. 
 Replacing it with argparse — so you can do python flashcards.py --topic Python --questions 15 — is a small change with a big signal. It's also more testable.
-
-Pytest coverage
-Testing the shuffle logic, the CSV read/write, the scoring calculation — makes the portfolio consistent and shows the tests weren't a one-off.
 """
