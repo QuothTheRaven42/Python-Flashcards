@@ -63,10 +63,6 @@ Right now times_missed is tracked but not really used for anything.
 The natural evolution is to weight card selection by that field — cards missed more often appear more frequently. 
 Even a simple implementation (sort by times_missed descending, bias the shuffle toward the top) demonstrates you understand data-driven logic. 
 
-**Session history / stats tracking**
-A separate stats.csv or JSON file that logs each session — date, topic, score, number of questions — 
-lets you add a --history flag that shows performance trends over time. 
-
 **argparse for proper CLI interface**
 The input()-based topic selection works but is fragile and not how real tools behave. 
 Replacing it with argparse — so you can do python flashcards.py --topic Python --questions 15 — is a small change with a big signal. It's also more testable.
