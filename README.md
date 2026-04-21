@@ -58,14 +58,30 @@ You'll be asked how many questions you want to review. Then you'll be shown a li
 
 ## In Development:
 
-**Spaced repetition algorithm (highest value)**
-Right now times_missed is tracked but not really used for anything. 
-The natural evolution is to weight card selection by that field — cards missed more often appear more frequently. 
-Even a simple implementation (sort by times_missed descending, bias the shuffle toward the top) demonstrates you understand data-driven logic. 
+-**Input validation and edge-case handling**  
+Right now some inputs can crash the program or create empty quiz sessions.
+I want to tighten up topic selection, question count input, and no-results cases so the app behaves more reliably.
 
-**argparse for proper CLI interface**
-The input()-based topic selection works but is fragile and not how real tools behave. 
-Replacing it with argparse — so you can do python flashcards.py --topic Python --questions 15 — is a small change with a big signal. It's also more testable.
+-**Retry missed questions**  
+A useful next step is letting the user review the questions they got wrong at the end of a session.
+That would make the tool more practical for studying and build on the times_missed logic already in place.
 
-**Pytest coverage**
-Bringing the same treatment here — testing the shuffle logic, the CSV read/write, the scoring calculation — makes the portfolio consistent and shows the tests weren't a one-off.
+-**Session history / stats tracking**  
+I’d like to log each quiz session to a separate CSV or JSON file with the date, topic, score, and number of questions.
+That would make it possible to view recent performance and track improvement over time.
+
+-**Hardest cards report**  
+Since times_missed is already being tracked, I want to use it to show which cards are missed most often.
+A simple report of the most-missed questions would make the app feel more data-driven and useful.
+
+-**Spaced repetition algorithm**  
+Right now times_missed is tracked but not really used for anything.
+The natural next step is to weight card selection by that field so cards missed more often appear more frequently.
+
+-**Add / edit / delete flashcards**  
+At the moment, the program can quiz from a CSV, but managing cards still has to be done manually.
+Adding command-line options for creating, editing, and deleting flashcards would make it feel more like a complete tool.
+
+-**argparse for proper CLI interface**  
+The current input()-based flow works, but it’s fragile and not how real command-line tools usually behave.
+Replacing parts of it with argparse would allow commands like python flashcards.py --topic Python --questions 15 and make the script easier to test and extend.
