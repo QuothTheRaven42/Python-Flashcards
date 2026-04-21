@@ -1,556 +1,556 @@
 question,a,b,c,d,answer,category,times_missed
-What does the traceback module do?,Deletes error logs,Prevents exceptions from occurring,Provides utilities to extract and format exception tracebacks,Creates custom exceptions,c,error_handling,0
-What exception is raised when accessing an index that doesn't exist?,ValueError,TypeError,KeyError,IndexError,d,error_handling,0
-What is a custom exception?,An exception from a third-party library,An exception with a custom message,A user-defined exception class that inherits from Exception,An exception that cannot be caught,c,error_handling,0
-What is a TypeError?,An error when an operation is applied to an object of an inappropriate type,An error when a variable is undefined,An error when a file is not found,An error when an index is out of range,a,error_handling,0
-What does the 'raise' keyword do?,Suppresses an exception,Manually triggers an exception,Logs an exception,Catches an exception,b,error_handling,0
-What is a RuntimeError?,An error that occurs during code compilation,An error during parsing,A generic error detected during execution that doesn't fit other categories,An error in the Python interpreter itself,c,error_handling,0
-What exception is raised when a dictionary key doesn't exist?,IndexError,KeyError,ValueError,AttributeError,b,error_handling,0
-What exception is raised when a file is not found?,FileNotFoundError,IOError,OSError,FileError,a,error_handling,0
-What is an AttributeError?,An error when an import fails,An error when an index is out of range,An error when a key doesn't exist in a dict,An error when an attribute or method doesn't exist on an object,d,error_handling,0
-Which keyword is used to handle exceptions?,catch,try,handle,error,b,error_handling,0
-What is a NameError?,An error when a variable name is too long,An error when a name is used before being defined,An error when two variables have the same name,An error when a class has no name,b,error_handling,0
-What is the difference between SyntaxError and TypeError?,They are the same,SyntaxError is a runtime error; TypeError is a compile-time error,SyntaxError occurs when code violates language grammar; TypeError occurs when an operation is applied to an inappropriate type,SyntaxError cannot be caught,c,error_handling,0
-What is an ImportError?,An error when a module has syntax errors,An error when a module cannot be found or a name cannot be imported from it,An error when importing too many modules,An error when circular imports occur,b,error_handling,0
-What does raise X from Y do?,Raises X and ignores Y,Raises both X and Y simultaneously,Chains exceptions — X is raised with Y stored as its __cause__,Converts Y into X,c,error_handling,0
-What is a ValueError?,An error when a variable is undefined,An error when a function receives an argument of the right type but inappropriate value,An error when dividing by zero,An error when a file is not found,b,error_handling,0
-What is exception chaining?,Catching the same exception twice,Raising a new exception while preserving the original using from,Catching exceptions in a loop,Having nested try/except blocks,b,error_handling,0
-Can you have multiple except blocks for one try?,No — only one except is allowed,Only with finally,Only for the same exception type,"Yes, you can handle different exception types separately",d,error_handling,0
-What is the difference between BaseException and Exception?,They are the same,BaseException is a subclass of Exception,Exception is a subclass of BaseException — use Exception for most custom exceptions,BaseException is for warnings only,c,error_handling,0
-What does try/except/else/finally look like in execution order?,try then finally then except then else,try then else then except then finally,try runs first; except runs if exception; else runs if no exception; finally always runs,try then except then finally then else,c,error_handling,0
-What is the purpose of the 'else' clause in a try/except block?,Suppresses the exception,Runs only if no exception was raised,Runs if an exception occurs,Always runs,b,error_handling,0
-What is an AttributeError?,An error when a key is missing from a dictionary,An error when an index is out of range,An error when accessing an attribute that doesn't exist on an object,An error when a file cannot be opened,c,error_handling,0
-Can you catch multiple exceptions in one except block?,"Yes, using a tuple of exception types",No — each needs its own block,Only if they share a parent class,Only two at a time,a,error_handling,0
-What does 'assert' do?,Prints a debug message,Logs a warning,Raises an AssertionError if a condition is False,Catches an exception,c,error_handling,0
-What does the 'finally' block do in a try/except?,Suppresses exceptions,Always runs regardless of whether an exception occurred,Runs only if no exception occurs,Runs only if an exception occurs,b,error_handling,0
-What is a RecursionError?,An error when a loop runs too long,An error when too many files are open,An error when a recursion exceeds Python's maximum stack depth,An error when a recursive function returns None,c,error_handling,0
-What is a NameError?,An error when a name is used before being assigned or defined,An error when a name is too long,An error when two variables share a name,An error when a module name is wrong,a,error_handling,0
-What does the as keyword do in an except clause?,Creates an alias for the module,Assigns the exception object to a variable,Converts the exception to a string,Suppresses the exception,b,error_handling,0
-What exception is raised when dividing by zero?,ZeroDivisionError,ValueError,DivisionError,MathError,a,error_handling,0
-What does list.pop() do by default?,Removes and returns the last item,Removes a random item,Removes the first item,Clears the list,a,lists,0
-What does int('42') return?,The string '42',A float 42.0,The integer 42,An error,c,data_types,0
-What does input() do?,Reads a file,Prints to the console,Reads a line from standard input and returns it as a string,Converts a value to a string,c,built_ins,0
-What does the 'while' loop do?,Loops a fixed number of times,Repeats a block as long as a condition is True,Loops through a list only,Executes once then checks the condition,b,control_flow,0
-"What does set([1, 2, 2, 3]) return?","[1, 2, 3]","{1, 2, 2, 3}","{1, 2, 3}","(1, 2, 3)",c,data_types,0
-What does the del keyword do with a dictionary key?,Clears the entire dictionary,Removes the key-value pair for the specified key,Renames the key,Sets the value to None,b,dictionaries,0
-What does set.discard() do?,Removes an element and raises an error if not found,Clears the set,Removes an element if present but does not raise an error if not found,Adds an element to the set,c,data_types,0
-What does str.isdigit() do?,Converts a string to a number,Checks if all characters in the string are digits,Removes digits from a string,Returns the number of digits in a string,b,strings,0
-What does str.replace() do?,Replaces occurrences of a substring with another string,Finds a substring,Removes whitespace,Splits a string on a delimiter,a,strings,0
-What does list.index() do?,Returns the number of occurrences of a value,Returns the last index of a value,Returns the first index of a given value,Returns all indices of a value,c,lists,0
-What does tuple unpacking do?,Converts a tuple to a list,"Assigns each element of a tuple to a separate variable like a, b = (1, 2)",Removes duplicates from a tuple,Reverses a tuple,b,syntax,0
-"What is the output of type((1,))?",<class 'list'>,<class 'int'>,<class 'tuple'>,<class 'set'>,c,data_types,0
-What is the difference between '==' and 'is'?,They are identical,'is' checks value equality; '==' checks identity,'is' only works with strings,'==' checks value equality; 'is' checks identity,d,operators,0
-What does abc.abstractmethod enforce?,That the method is private,That the method is a class method,That any concrete subclass must implement the method or instantiation will fail,That the method returns None,c,OOP,0
-What does sum() do?,Concatenates strings,Returns the sum of all items in an iterable,Counts items in an iterable,Returns the average of items,b,built_ins,0
-What does zip() do?,Combines two or more iterables into tuples,Flattens a nested list,Compresses files,Sorts two lists simultaneously,a,built_ins,0
-What does import os allow you to do?,Create GUIs,Interact with the operating system,Open database connections,Connect to the internet,b,modules,0
-What does __set_name__ allow?,Renaming a class,A descriptor to know the attribute name it was assigned to on the class,Setting class-level constants,Renaming methods at runtime,b,OOP,0
-What does weakref.ref() do?,Creates a copy of an object,Creates a strong reference,Creates a reference that doesn't prevent garbage collection,Counts references to an object,c,modules,0
-What does 'hello'.translate(table) do?,Translates to another language,Applies a translation table to replace or delete characters,Moves characters around,Reverses the string,b,strings,0
-What is a constructor in Python?,The init method,The del method,The new method,The str method,a,OOP,0
-"What does the * operator do in unpacking like a, *b = [1, 2, 3, 4]?",Multiplies the values,Collects remaining values into a list,Ignores the remaining values,Creates a tuple,b,syntax,0
-What is a generator?,A type of class,A built-in that creates ranges,A function that uses yield to lazily produce values one at a time,A function that returns a list,c,generators,0
-What does set.issuperset() check?,If the set is empty,If the set contains all elements of another set,If two sets are disjoint,If the set is frozen,b,data_types,0
-"What does ' '.join(['a', 'b', 'c']) return?",a b c,"['a', 'b', 'c']",abc,a-b-c,a,strings,0
-What does str.count() do?,Returns the length of the string,Returns the number of non-overlapping occurrences of a substring,Counts only alphabetic characters,Counts the number of words,b,strings,0
-"What does open('file.txt', 'rb') do?",Opens for reading in binary mode,Opens for reading backwards,Opens for reading with buffering,Opens a remote file,a,file_io,0
-What does del mylist[1] do?,Removes the first element,Removes the element at index 1,Clears the list,Removes the last element,b,lists,0
-What is the difference between list.sort() and sorted()?,sorted() sorts in place; list.sort() returns a new list,list.sort() only works on numbers,They are identical,list.sort() sorts in place and returns None; sorted() returns a new sorted list,d,lists,1
-What does list.copy() do?,Creates a deep copy of the list,Creates a shallow copy of the list,Returns a reference to the same list,Copies the list to a file,b,lists,0
-"What does dict.setdefault(key, default) do?","Sets a key to default only if the key is not already present, and returns the value",Always overwrites the key with default,Removes the key if it exists,Returns True if the key has a default value,a,dictionaries,0
-What does the async keyword before def indicate?,A faster function,A function that runs in a separate thread,A coroutine that can be paused and resumed,A function that returns a generator,c,syntax,0
-What does vars() return?,All variables in the program,The __dict__ attribute of an object,All global variables,A list of variable names,b,built_ins,0
-"What does list.insert(i, x) do?",Removes the element at index i and replaces it with x,Inserts x at position i,Replaces the element at index i with x,Appends x to the list,b,lists,0
-What is the diamond problem in multiple inheritance?,When a class inherits from four classes,When two parent classes inherit from the same grandparent causing ambiguity in method resolution,When a class inherits from itself,When inheritance is more than three levels deep,b,OOP,0
-What module is used for multiprocessing in Python?,threading,subprocess,os,multiprocessing,d,modules,0
-What is the output of bool(None)?,True,0,Error,False,d,data_types,0
-"How do you access the second element of a nested list [[1,2],[3,4]]?",list[1][1],list[2],list[0][1],list[1][0],c,lists,0
-What does the 'break' statement do in a loop?,Skips the current iteration,Pauses execution,Exits the loop immediately,Restarts the loop,c,control_flow,0
-What does pip install requests do?,Creates a new module called requests,Downloads and installs the requests package from PyPI,Imports the requests module,Updates Python,b,modules,0
-What does str.lower() do?,Removes lowercase letters,Converts the first character to lowercase,Converts the entire string to lowercase,Returns True if the string is lowercase,c,strings,0
-What does asyncio.gather() do?,Collects results from synchronous functions,Runs multiple coroutines concurrently and returns their results,Gathers log output,Schedules a single coroutine,b,modules,0
-What does round() do?,Always rounds up,Always rounds down,Rounds a number to a given number of decimal places,Truncates a number,c,built_ins,0
-Can you modify a tuple after creation?,Yes — tuples are mutable,Only the first element,Only by using a special method,No — tuples are immutable,d,data_types,0
-What is inheritance in OOP?,When two classes share the same name,A class that cannot be modified,When a method calls itself,When a class adopts attributes and methods from another class,d,OOP,0
-What is composition in OOP?,Inheriting from multiple classes,Using global variables inside classes,Building complex objects by including instances of other classes as attributes,Defining multiple methods with the same name,c,OOP,0
-What does math.sqrt() do?,Returns the square of a number,Returns the square root of a number,Returns a random number,Returns the absolute value,b,modules,0
-What does functools.partial do?,Partially evaluates a string,Creates a new function with some arguments of an existing function pre-filled,Caches the first call only,Splits a function into two,b,functions,0
-What does f'{value=}' do in an f-string?,Formats value with = padding,Outputs both the expression and its value — useful for debugging,Raises a SyntaxError,Converts value to a boolean,b,strings,0
-What is a virtual environment in Python?,A simulated operating system,An isolated Python environment with its own packages and interpreter,A debugging mode,A type of IDE,b,modules,0
-"What is the output of [1, 2, 3][1:]?","[1, 2]","[2, 3]",[1],[3],b,lists,0
-What does dict.items() return?,A list of values,A sorted dictionary,A list of keys,A view of key-value pairs as tuples,d,dictionaries,0
-What does the 'in' operator do when used with a dictionary?,Iterates over all items,Checks if a key-value pair exists,Checks if a value exists,Checks if a key exists,d,operators,0
-What does the walrus operator (:=) do?,Compares two values,Assigns a value within an expression,Checks type equality,Creates a constant,b,operators,0
-What is the difference between @staticmethod and @classmethod?,They are identical,@staticmethod receives cls; @classmethod receives nothing,@staticmethod receives no implicit first argument; @classmethod receives the class as cls,@classmethod cannot access class attributes,c,OOP,0
-What does a single underscore prefix on a method mean (e.g. _method)?,It is private and cannot be accessed at all,It is a class method,It is a convention indicating it is intended for internal use,It is a magic method,c,OOP,0
-What does str.zfill() do?,Fills a string with zeros,Pads a string with leading zeros to reach a specified width,Removes zeros from a string,Counts zeros in a string,b,strings,0
+What does typing.Protocol define?,A network protocol interface,A structural subtyping interface — a class satisfies it if it has the required methods regardless of inheritance,An abstract base class requiring registration,A type alias,b,functions,1
+What is a docstring?,A string literal used to document a function or class,A multiline variable,A comment inside a loop,A type of string formatting,a,functions,0
+What is a default parameter value?,A parameter that must be provided,A parameter that raises an error if not provided,A value assigned to a parameter that is used if no argument is given,A global variable,c,functions,1
+"What does typing.Tuple[int, str, float] indicate?",A named tuple,A type hint for a tuple with exactly those three types in that order,A tuple of any length,A tuple that can hold any type,b,functions,0
+What does typing.List[int] indicate?,A list that only contains integers at runtime,A type hint indicating a list of integers,A frozen list,An integer stored in a list,b,functions,0
+What does typing.Literal indicate?,The value is a string,A type hint restricting a variable to specific literal values,A constant that cannot be reassigned,A value evaluated at compile time,b,functions,0
+What does typing.overload allow?,Overriding a parent method,Defining multiple type signatures for the same function for static type checkers,Running a function multiple times,Creating a fallback function,b,functions,0
+"What is the output of (lambda x, y: x + y)(3, 4)?",34,Error,12,7,d,functions,0
+What is the difference between positional and keyword arguments?,There is no difference,Positional arguments are passed by position; keyword arguments are passed by name,Keyword arguments must come before positional arguments,Positional arguments are for classes only,b,functions,0
+What does typing.TypedDict do?,Creates a dict subclass with enforced types at runtime,Defines a dictionary type with specific key names and value types for static analysis,Creates an immutable dictionary,Converts a typed class to a dict,b,functions,0
+What does the * separator do in a function signature?,Makes all following parameters keyword-only,Makes all parameters optional,Collects extra positional arguments,Unpacks a list,a,functions,0
+What does typing.Union do?,Creates a union of two sets,"Indicates a value can be one of several types like Union[int, str]",Merges two classes,Combines two functions,b,functions,0
+What happens if a function has no return statement?,It raises an error,It returns 0,It returns None,It returns an empty string,c,functions,0
+What does typing.Callable indicate?,A callable class,A type hint indicating a function or callable object with optional argument and return type signatures,A method that can be overridden,A built-in function,b,functions,0
+What is function annotation in Python?,A way to enforce type checking,Metadata attached to parameters and return values using : and -> syntax,A docstring,A comment above a function,b,functions,0
+What does **kwargs allow in a function?,Exactly one keyword argument,Any number of keyword arguments,Only integer keyword arguments,Any number of positional arguments,b,functions,0
+What does functools.wraps do in a decorator?,Speeds up the wrapped function,Copies the original function's metadata to the wrapper so it isn't lost,Makes the wrapper recursive,Prevents the decorator from running twice,b,functions,0
+What is a keyword argument?,An argument that uses a reserved Python keyword,An argument passed using the parameter name in the function call,An argument that can only be a string,An argument that must come first,b,functions,0
+What is a recursive function?,A function that takes *args,A function that calls itself,A function with a decorator,A function that returns a list,b,functions,0
+What does functools.reduce() do?,Reduces memory usage,Removes elements from a list,"Applies a function cumulatively to items of an iterable, reducing it to a single value",Filters and maps at the same time,c,functions,0
+What is the mutable default argument trap?,Using a list or dict as a default parameter is safe,Default mutable arguments are re-created each call,A mutable default is shared across all calls because it is evaluated once at definition time,Python raises a warning when you use a mutable default,c,functions,0
+What does the return statement do?,Prints a value,Exits the program,Ends a loop,Sends a value back from a function to the caller,d,functions,0
+What is the difference between global and nonlocal?,They are identical,global accesses module-level variables; nonlocal accesses enclosing function variables,nonlocal creates global variables,global works inside classes; nonlocal works inside functions,b,functions,0
 What is a higher-order function?,A function defined inside a class,A function that takes or returns other functions,A function with more than 3 parameters,A function that calls super(),b,functions,0
-What does negative indexing do in Python?,Raises an IndexError,Counts from the end of the sequence,Reverses the sequence,Removes items from the end,b,syntax,0
+What does a decorator do?,Renames a function,Deletes a function after use,Wraps a function to add behavior before or after it runs,Adds color to terminal output,c,functions,0
+What does the / in a function signature enforce?,All arguments to be keyword-only,All arguments after / to be positional-only,All arguments before / to be positional-only,Optional arguments,c,functions,0
+What does the 'global' keyword do?,Deletes a variable,Converts a local variable to a constant,Allows a function to access and modify a variable from the global scope,Creates a new global variable,c,functions,0
+What does using * in a function signature force?,All arguments to be positional,All arguments after * to be keyword-only,All arguments before * to be keyword,The function to accept unlimited arguments,b,functions,0
 "What does typing.Dict[str, int] indicate?",A dictionary sorted by string keys,A type hint for a dictionary with string keys and integer values,A dictionary that only allows two entries,A frozen dictionary,b,functions,0
+What does *args allow in a function?,Any number of positional arguments,Only string arguments,Exactly two positional arguments,Any number of keyword arguments,a,functions,0
+What is the @ symbol used for in Python?,String formatting,Modulo operation,Matrix multiplication or applying a decorator,Bitwise AND,c,functions,0
+What does filter() do?,Removes duplicate values,Sorts an iterable,Returns an iterator of items for which a function returns True,Maps values to keys,c,functions,0
+What is the LEGB rule in Python?,A debugging technique,A sorting algorithm,"The scope resolution order: Local, Enclosing, Global, Built-in",A naming convention,c,functions,0
+What is a closure?,A class with no methods,A decorator with no arguments,A function that remembers variables from its enclosing scope even after that scope has closed,A function that raises an exception,c,functions,0
+What is the purpose of typing.Optional[int]?,Makes the variable optional,Indicates the value can be int or None,Creates a nullable integer,Makes the parameter have a default value,b,functions,0
+What does map() do?,Maps keys to values in a dictionary,Applies a function to every item in an iterable and returns an iterator,Filters items from a list,Sorts an iterable,b,functions,0
+What is a lambda function?,A class method,A function with no return value,A recursive function,An anonymous function defined in a single line,d,functions,0
+"What do map(), filter(), and reduce() have in common?",They all modify lists in place,They all return dictionaries,They are all higher-order functions that take a function and an iterable,They all require lambda functions,c,functions,0
+Does Python enforce type hints at runtime?,Yes — it raises TypeError for wrong types,Only in strict mode,Only with mypy installed,No — type hints are for documentation and static analysis tools only,d,functions,0
+What is a first-class function?,The first function defined in a module,"A function that can be passed around as a value — assigned to variables, passed as arguments",A function that runs first,A function with no parameters,b,functions,1
+What is tail call optimization and does Python do it?,Yes — Python optimizes tail calls automatically,No — Python does not optimize tail calls and deep recursion will hit the recursion limit,Only in PyPy,Only with functools.reduce,b,functions,0
+What does map() do?,Filters items from a list,Applies a function to every item in an iterable and returns an iterator,Creates a dictionary from a list,Reduces a list to one value,b,functions,0
+What does functools.partial do?,Partially evaluates a string,Creates a new function with some arguments of an existing function pre-filled,Caches the first call only,Splits a function into two,b,functions,0
+What does def indicate in Python?,A variable declaration,A loop definition,A function definition,A class definition,c,functions,0
+What is the difference between parameters and arguments?,They are the same thing,Parameters are in the function call; arguments are in the definition,Parameters are in the function definition; arguments are the values passed in the call,Parameters are for classes; arguments are for functions,c,functions,0
+What is the correct way to define a function in Python?,define myFunc():,func myFunc():,def myFunc():,function myFunc():,c,functions,0
+What does functools.lru_cache do?,Limits the number of function arguments,Caches the results of a function so repeated calls with the same arguments avoid recomputation,Logs function call order,Sorts function output,b,functions,0
+What does the nonlocal keyword do?,Creates a new local variable,Accesses a variable from the global scope,Accesses and modifies a variable from an enclosing non-global scope,Deletes a variable,c,functions,0
 What does typing.TypeVar do?,Creates a typed variable at runtime,Defines a generic type placeholder for use in type hints,Checks a variable's type,Converts a variable's type,b,functions,0
-What does next() do with a generator?,Returns the next value from the generator,Returns all remaining values,Converts the generator to a list,Resets the generator,a,generators,0
-What does the property() built-in function do?,Creates a class property that cannot be modified,"Creates a managed attribute with optional getter, setter, and deleter methods",Returns the properties of an object,Lists all attributes of a class,b,OOP,0
+What is the mutable default argument trap fix?,Use None as the default and create the object inside the function body,Use a tuple instead of a list,Use a global variable,Use __init__ only,a,functions,0
+"What does tuple([1, 2, 3]) return?","(1, 2, 3)","[1, 2, 3]","{1, 2, 3}",Error,a,data_types,0
+What does __hash__ define?,The object's type,A custom hash value for use in sets and as dictionary keys,The object's memory address,The object's string representation,b,OOP,0
+What does os.path.exists() do?,Returns the size of a file,Creates a file,Deletes a file,Checks whether a file or directory exists,d,modules,0
+What does object.__subclasshook__ allow?,Preventing subclassing,Customizing the behavior of issubclass() checks for ABCs,Automatically registering subclasses,Overriding MRO calculation,b,OOP,0
+What does generator.close() do?,Deletes the generator from memory,Closes the file associated with the generator,Raises GeneratorExit inside the generator to stop it,Pauses the generator,c,generators,0
+What is a set comprehension?,A comprehension using square brackets,A comprehension that creates a list of unique values,"A comprehension using curly braces like {x for x in iterable}, producing a set",A comprehension that sorts values,c,comprehensions,0
+What does the traceback module do?,Deletes error logs,Prevents exceptions from occurring,Provides utilities to extract and format exception tracebacks,Creates custom exceptions,c,error_handling,0
+What does the random module's random.choice() do?,Returns a random element from a sequence,Shuffles a list,Returns a random integer,Returns a random float,a,modules,0
+What does math.ceil() do?,Rounds a number down,Rounds a number up to the nearest integer,Returns the ceiling of a string,Clamps a number to a range,b,modules,0
+What is the output of: for i in range(3): print(i)?,1 2 3,0 1 2 3,0 1 2,1 2,c,control_flow,0
+What does __getitem__ allow?,Getting an attribute by name,Iterating over an object,Using indexing syntax like obj[key] on a custom object,Getting the length of an object,c,OOP,0
+What does math.floor() do?,Rounds a number up,Returns the absolute value,Rounds a number down to the nearest integer,Returns the floor division result,c,modules,0
+What is a generator?,A type of class,A built-in that creates ranges,A function that uses yield to lazily produce values one at a time,A function that returns a list,c,generators,0
+What does raise X from Y do?,Raises X and ignores Y,Raises both X and Y simultaneously,Chains exceptions — X is raised with Y stored as its __cause__,Converts Y into X,c,error_handling,0
+What does the else clause on a for loop do?,Runs if the loop encounters an error,Always runs after the loop,Runs only if the loop completes without hitting a break,Runs if the loop body is empty,c,control_flow,0
+"What does divmod(10, 3) return?","(3, 1)","(1, 3)","(3.33, 1)","(10, 3)",a,built_ins,0
+How does Python resolve the diamond problem?,It raises an error,It ignores one parent,Using the C3 linearization algorithm to determine the MRO,It picks the first parent alphabetically,c,OOP,0
+What does reversed() return?,A sorted list in reverse,A new reversed list,A reverse iterator over a sequence,The last element,c,built_ins,0
+What does \n represent in a string?,A tab character,A newline character,A null character,A backslash followed by n,b,strings,0
+Why is eval() considered dangerous?,It is slow,It can execute arbitrary code — potentially harmful with untrusted input,It only works with numbers,It modifies global variables,b,built_ins,0
+What does float('3.14') return?,The string '3.14',The integer 3,The float 3.14,An error,c,data_types,0
 What mode string opens a file for appending?,w,rw,r,a,d,file_io,0
-What is the descriptor protocol?,A way to validate function arguments,A set of dunder methods (__get__ __set__ __delete__) that define attribute access behavior on a class,A protocol for file descriptors,A way to describe a class's attributes,b,OOP,0
-What is the output of print(type(3.14))?,<class 'float'>,<class 'double'>,<class 'int'>,<class 'number'>,a,data_types,0
-What does dict.get() do?,Returns the value for a key or a default if the key is missing,Raises an error if the key is missing,Removes a key-value pair,Returns all keys,a,dictionaries,0
-What is polymorphism in Python?,The ability of different objects to be used interchangeably through a shared interface,When a function calls itself,When a class inherits from multiple parents,When a class has multiple constructors,a,OOP,0
-What is the difference between an iterable and an iterator?,They are the same,An iterable can produce an iterator; an iterator maintains state and produces values with __next__,An iterator is a type of list,An iterable uses yield,b,syntax,0
-What is a tuple in Python?,"An immutable, ordered sequence of elements",A mutable ordered sequence,An unordered collection of unique elements,A key-value mapping,a,data_types,0
-What does re.sub() do?,Submits a pattern to a database,Finds a substring,Replaces occurrences of a pattern with a replacement string,Subtracts characters from a string,c,modules,0
-What does the assert statement do?,Prints a debug message,Checks a condition and raises AssertionError if it is False,Assigns a value,Imports a module,b,syntax,0
+What does vars() return?,All variables in the program,The __dict__ attribute of an object,All global variables,A list of variable names,b,built_ins,0
+What does any() return?,True if the iterable is not empty,True if all elements are truthy,True if at least one element is truthy,True if no elements are truthy,c,built_ins,0
+What is the purpose of str?,To define the string representation shown to end users,To delete an instance,To define what is returned when repr() is called,To initialize an instance,a,OOP,0
+What is the output of not True?,True,None,0,False,d,operators,0
+What does sys.argv contain?,The Python version,The current working directory,A list of command-line arguments passed to the script,The system environment variables,c,modules,0
+What does contextlib.suppress do?,Silences print statements,Suppresses specified exceptions within a with block without needing try/except,Suppresses all output,Suppresses warnings only,b,modules,0
+What does None represent in Python?,An empty string,The absence of a value,A false value,The number zero,b,data_types,0
+What does the __str__ method return?,A developer-oriented representation,A boolean value,A user-friendly string representation of the object,The class name,c,OOP,0
+What does 'or' return in the expression 'a or b'?,Always the larger value,Always True,b if a is truthy — otherwise a,a if a is truthy — otherwise b,d,operators,0
+What does pathlib.Path.glob() do?,Searches the internet,Returns a list of files matching a pattern in a directory,Compresses files,Validates a path,b,modules,0
+"What does random.randint(1, 10) do?",Returns a random float between 1 and 10,Returns a random integer between 1 and 10 inclusive,Returns a random integer between 0 and 10,Returns a random integer between 1 and 9,b,modules,0
+What does collections.Counter do?,Counts to a specified number,Counts the occurrences of elements in an iterable and returns a dictionary-like object,Creates a counter variable,Counts files in a directory,b,modules,0
+What does int('42') return?,The string '42',A float 42.0,The integer 42,An error,c,data_types,0
+What is an iterable in Python?,A function that loops,"Any object that can return an iterator, such as lists, strings, and dictionaries",A type of generator,A loop variable,b,syntax,0
+What does @staticmethod mean?,The method receives cls as its first argument,The method receives self as its first argument,The method belongs to an instance,The method belongs to the class but receives neither self nor cls,d,OOP,0
+What is an f-string in Python?,A file string for I/O operations,A formatted string literal prefixed with f that allows embedded expressions,A frozen string that cannot be modified,A function that returns a string,b,strings,0
+What does @property.setter allow?,Setting a class variable,Defining write behavior for a property attribute,Making a property immutable,Calling a method as a setter,b,OOP,0
+What does the << operator do?,Left shift — shifts bits to the left,Less than comparison,String indentation,Assignment,a,operators,0
+"What is the output of len({'a': 1, 'b': 2, 'c': 3})?",6,2,3,9,c,dictionaries,0
+What does file.writelines() do?,Writes a single line,Writes an iterable of strings to the file,Writes lines with automatic newlines,Writes a numbered list,b,file_io,0
+What does 'assert' do?,Prints a debug message,Logs a warning,Raises an AssertionError if a condition is False,Catches an exception,c,error_handling,0
+What is cooperative multitasking in asyncio?,Threads sharing CPU time,Coroutines voluntarily yielding control at await points rather than being preempted,A scheduler that forces context switches,A form of multiprocessing,b,modules,0
+Why is monkey patching generally discouraged?,It is too slow,It can make code unpredictable and hard to debug,It doesn't work in Python 3,It requires special imports,b,syntax,0
+What does os.makedirs() do?,Creates a single directory,Creates a directory and all necessary parent directories,Creates a file,Removes a directory,b,modules,0
+What does dict.values() return?,A view of all values in the dictionary,A list of key-value pairs,A sorted list of values,A list of keys,a,dictionaries,0
+What does [x for x in range(10) if x % 3 == 0] produce?,"[3, 6, 9]","[0, 3, 6, 9]","[1, 2, 4, 5, 7, 8]","[0, 1, 2, 3]",b,comprehensions,0
 What is multiple inheritance?,A class that inherits from the same class twice,When a class has multiple instances,When a class inherits from more than one parent class,When inheritance goes more than two levels deep,c,OOP,0
-What does __lt__ define?,How objects are printed,How objects are hashed,Behavior for the less-than operator,How objects are copied,c,OOP,0
+What does negative indexing do in Python?,Raises an IndexError,Counts from the end of the sequence,Reverses the sequence,Removes items from the end,b,syntax,0
+What is the time complexity of searching for an element in an unsorted list?,O(1),O(n),O(log n),O(n^2),b,data_structures,0
+What does 'hello' * 3 return?,hellohellohello,hello3,Error,hello hello hello,a,strings,0
+What is a RuntimeError?,An error that occurs during code compilation,An error during parsing,A generic error detected during execution that doesn't fit other categories,An error in the Python interpreter itself,c,error_handling,0
+What does sys.exit() do?,Terminates the current function,Raises SystemExit to end the program,Kills all threads,Closes all open files,b,modules,0
+What is the difference between '==' and 'is'?,They are identical,'is' checks value equality; '==' checks identity,'is' only works with strings,'==' checks value equality; 'is' checks identity,d,operators,0
+What does str.lower() do?,Removes lowercase letters,Converts the first character to lowercase,Converts the entire string to lowercase,Returns True if the string is lowercase,c,strings,0
+How can you implement a stack in Python?,Using a dictionary,Using a set,Using a list with append() and pop(),Using a tuple,c,data_structures,0
+What is a stack data structure?,A FIFO structure,A structure that allows random access,A LIFO (Last In First Out) structure,A sorted structure,c,data_structures,0
+What does __missing__ do in a dict subclass?,Raises a KeyError immediately,Defines behavior when a key is not found — used by defaultdict,Returns None for missing keys,Removes the key after access,b,OOP,0
+What exception is raised when dividing by zero?,ZeroDivisionError,ValueError,DivisionError,MathError,a,error_handling,0
+What are the standard logging levels in Python?,"print, warn, error, crash","LOW, MEDIUM, HIGH, CRITICAL","DEBUG, INFO, WARNING, ERROR, CRITICAL","TRACE, DEBUG, INFO, FATAL",c,modules,0
+What does str.isdigit() do?,Converts a string to a number,Checks if all characters in the string are digits,Removes digits from a string,Returns the number of digits in a string,b,strings,0
+What does 'self' refer to in a class method?,The current instance of the class,The module the class is in,The parent class,The class itself,a,OOP,0
+What does set.discard() do?,Removes an element and raises an error if not found,Clears the set,Removes an element if present but does not raise an error if not found,Adds an element to the set,c,data_types,0
+What does try/except/else/finally look like in execution order?,try then finally then except then else,try then else then except then finally,try runs first; except runs if exception; else runs if no exception; finally always runs,try then except then finally then else,c,error_handling,0
+What does list.pop() do by default?,Removes and returns the last item,Removes a random item,Removes the first item,Clears the list,a,lists,0
+What is a raw string in Python?,A string prefixed with r that treats backslashes as literal characters,A string that cannot be modified,An unformatted string,A string read from a file,a,strings,0
+What is the output of bool(None)?,True,0,Error,False,d,data_types,0
+"What does ' '.join(['a', 'b', 'c']) return?",a b c,"['a', 'b', 'c']",abc,a-b-c,a,strings,0
+What is the memory advantage of generators over lists?,Generators use more memory,No advantage,Generators produce values on demand so they don't store all values in memory at once,Generators compress data,c,generators,0
+What does the id() function return?,The type of an object,The value of an object,The unique identity or memory address of an object,The size of an object,c,built_ins,0
+What does __slots__ do?,Limits the methods a class can have,Restricts the attributes an instance can have — saving memory by not using __dict__,Defines default values for attributes,Makes a class immutable,b,OOP,0
+What does the pathlib module provide?,String manipulation utilities,An object-oriented interface for filesystem paths,Database connection tools,Networking utilities,b,modules,0
+Why is from module import * generally discouraged?,It is slower,It can cause name conflicts and makes it unclear where names come from,It doesn't work with packages,It only imports functions,b,modules,0
+What does dict.popitem() do?,Removes a random item,Removes the first item,Removes and returns the last inserted key-value pair,Removes all items,c,dictionaries,0
+What does __del__ do?,Deletes a class,Defines cleanup behavior when an object is about to be garbage collected,Deletes an attribute,Prevents deletion of an object,b,OOP,0
+What is the difference between isinstance() and type() for type checking?,They are the same,isinstance() is deprecated,type() is preferred for subclasses,isinstance() is preferred because it respects inheritance; type() does exact type matching,d,built_ins,0
+What module is used for multiprocessing in Python?,threading,subprocess,os,multiprocessing,d,modules,0
+What does set.issuperset() check?,If the set is empty,If the set contains all elements of another set,If two sets are disjoint,If the set is frozen,b,data_types,0
+What does __new__ do?,Initializes an instance,Creates a new class at runtime,Allocates memory and creates a new instance before __init__ is called,Defines a new method,c,OOP,0
+What is unique about sets in Python?,They are immutable,They are ordered,They allow duplicate values,They contain only unique values,d,data_types,0
+What does iter() do?,Iterates over an object,Returns an iterator from an iterable,Creates a new list,Counts iterations,b,built_ins,0
+Can dictionary keys be mutable types like lists?,Yes — any type can be a key,Only if the list is empty,Only if the list has one element,No — dictionary keys must be hashable and immutable,d,dictionaries,0
+What does str.upper() do?,Capitalizes only the first letter,Converts all characters to uppercase,Converts all characters to lowercase,Removes lowercase letters,b,strings,0
+What happens when a generator function is called?,It runs the function body immediately,It returns a generator object without executing the body until iterated,It returns None,It raises an error,b,generators,0
+What does os.listdir() return?,A list of all files on the system,A list of entries in the specified directory,A list of open file handles,A list of environment variables,b,modules,0
+What is an abstract class?,A class imported from another module,A class that cannot be instantiated and is meant to be subclassed,A class with no attributes,A class with only static methods,b,OOP,0
+What is an AttributeError?,An error when a key is missing from a dictionary,An error when an index is out of range,An error when accessing an attribute that doesn't exist on an object,An error when a file cannot be opened,c,error_handling,0
+Can dictionaries be nested?,No — dictionaries cannot contain other dictionaries,Only one level deep,"Yes, dictionaries can contain other dictionaries as values",Only if the inner dictionary is empty,c,dictionaries,0
+What does the 'nonlocal' keyword do?,Makes a variable global,Declares that a name refers to the nearest enclosing scope that is not global,Deletes a variable from the enclosing scope,Prevents a variable from being shadowed,b,syntax,0
+What happens if you assign a value to an existing key in a dictionary?,A duplicate key is created,It raises a KeyError,The old value is overwritten with the new value,The dictionary becomes invalid,c,dictionaries,0
+What is scope in Python?,The size of a variable,The lifetime of a function,The region of code where a name is accessible,The number of arguments a function takes,c,syntax,0
+What does __exit__ define in a context manager?,The destructor,How the object is printed,The behavior when exiting a with block — used for cleanup and optionally suppressing exceptions,The copy behavior,c,OOP,0
+What is a generator function?,A function that returns a list,A function that uses yield to produce values one at a time lazily,A function that generates random numbers,A function that creates classes,b,generators,0
+What is the difference between BaseException and Exception?,They are the same,BaseException is a subclass of Exception,Exception is a subclass of BaseException — use Exception for most custom exceptions,BaseException is for warnings only,c,error_handling,0
+What does if __name__ == '__main__' do?,Defines the main function,Checks if the script is being run directly and not imported,Checks for syntax errors,Initializes the module,b,modules,0
+What is an iterator in Python?,A for loop,An object that implements __iter__ and __next__ to produce values one at a time,A list index,A generator function,b,syntax,0
+What does collections.defaultdict do?,Creates a dictionary with a default value factory for missing keys,Creates an ordered dictionary,Creates an immutable dictionary,Creates a counter,a,modules,0
+What does dict.keys() return?,A list of key-value pairs,A view of all keys in the dictionary,A list of values,A sorted list of keys,b,dictionaries,0
+Can you use send() with a generator?,Yes — to send a value into the generator at the point of the yield expression,No — generators only produce values,Only with async generators,Only before the first yield,a,generators,0
+What does set.difference() return?,Elements in both sets,All unique elements,Elements in the first set but not in the second,Elements in neither set,c,data_types,0
+What is the difference between a set and a frozenset?,There is no difference,A frozenset is ordered; a set is not,A frozenset is immutable; a set is mutable,A set cannot contain numbers,c,data_types,0
+What does asyncio.gather() do?,Collects results from synchronous functions,Runs multiple coroutines concurrently and returns their results,Gathers log output,Schedules a single coroutine,b,modules,0
+What does str.format() do?,Formats a file for writing,Checks the format of a string,Formats a string by replacing placeholders with values,Converts a string to a specific encoding,c,strings,0
+Why does 0.1 + 0.2 not equal 0.3 in Python?,Python has a bug,Floats are stored as strings,Floating-point numbers have limited precision in binary representation,Python rounds all decimals,c,data_types,0
+What does asyncio.run() do?,Starts a new thread,Runs a coroutine as the entry point of an asyncio program,Creates an event loop without running it,Runs a function in a subprocess,b,modules,0
+What is a sentinel value?,A value that triggers an exception,A special unique object used to signal a specific condition like a missing default,A default return value,A constant defined in the typing module,b,syntax,0
+What is the difference between __str__ and __repr__?,They are identical,__repr__ is for end users; __str__ is for developers,__str__ is for end users; __repr__ is for developers and should be unambiguous,__str__ is only used in f-strings,c,OOP,0
+What does @classmethod indicate?,The method is private,The method receives self as its first argument,The method receives cls as its first argument,The method is inherited automatically,c,OOP,0
+What does @abstractmethod do?,Makes a method private,Makes a method static,Marks a method that must be implemented by subclasses,Makes a method return None,c,OOP,0
+What is the average time complexity of looking up a key in a dictionary?,O(n),O(log n),O(1),O(n^2),c,data_structures,0
+What does __class_getitem__ enable?,Runtime type checking,Subscript syntax on a class like MyClass[int] — used to support generic types,Indexing class attributes,Creating parameterized metaclasses,b,OOP,0
+What does [i for i in range(10) if i % 2 == 0] produce?,"[1, 3, 5, 7, 9]","[0, 2, 4, 6, 8]","[2, 4, 6, 8, 10]","[0, 1, 2, 3, 4]",b,comprehensions,0
+What does list.remove() do?,Removes the item at a given index,Clears the list,Removes the first occurrence of a given value,Removes the last item,c,lists,1
+What does the append mode 'a' do when opening a file?,Overwrites existing content,Raises an error if the file exists,Opens for writing at the end without truncating existing content,Opens for reading and writing,c,file_io,0
+What does the del keyword do with a dictionary key?,Clears the entire dictionary,Removes the key-value pair for the specified key,Renames the key,Sets the value to None,b,dictionaries,0
+What is a queue data structure?,A LIFO structure,A sorted structure,A FIFO (First In First Out) structure,A structure that allows random access,c,data_structures,0
+What is the time complexity of accessing an element by index in a list?,O(n),O(log n),O(n^2),O(1),d,data_structures,0
+What does sum() do?,Concatenates strings,Returns the sum of all items in an iterable,Counts items in an iterable,Returns the average of items,b,built_ins,0
+What is a descriptor in Python?,A docstring for a class,A way to sort objects,"An object that defines __get__, __set__, or __delete__ to customize attribute access",A type of decorator,c,OOP,0
+How do you create a tuple with a single element?,x = (1),x = tuple(1),"x = (1,)",x = [1],c,data_types,0
+What does str.zfill() do?,Fills a string with zeros,Pads a string with leading zeros to reach a specified width,Removes zeros from a string,Counts zeros in a string,b,strings,0
+What is a RecursionError?,An error when a loop runs too long,An error when too many files are open,An error when a recursion exceeds Python's maximum stack depth,An error when a recursive function returns None,c,error_handling,0
+What does generator.throw() do?,Throws away the generator,Throws an exception at the point where the generator is paused,Sends a value to the generator,Restarts the generator,b,generators,0
+How can you implement a queue efficiently in Python?,Using a list with append() and pop(0),Using a set,Using collections.deque with append() and popleft(),Using a dictionary,c,data_structures,0
+What is the difference between list.sort() and sorted()?,sorted() sorts in place; list.sort() returns a new list,list.sort() only works on numbers,They are identical,list.sort() sorts in place and returns None; sorted() returns a new sorted list,d,lists,1
+What does next() do with a generator?,Returns the next value from the generator,Returns all remaining values,Converts the generator to a list,Resets the generator,a,generators,0
+What does the union of two sets return?,All unique elements from both sets,Elements in both sets,Elements only in the first set,Elements in neither set,a,data_types,0
+What are Python's four scope levels?,"Public, Protected, Private, Global","File, Function, Class, Module","Local, Enclosing, Global, Built-in (LEGB)","Instance, Class, Module, Package",c,syntax,0
+Is __del__ guaranteed to be called?,Yes — always called immediately,Only when using the del keyword,No — it depends on the garbage collector and may not be called in all situations,Only for class variables,c,OOP,1
+What does str.index() do compared to str.find()?,They are identical,index() returns -1 if not found; find() raises an error,index() raises a ValueError if not found; find() returns -1,index() only searches from the end,c,strings,0
+What is the ternary conditional expression in Python?,if x then y else z,x ? y : z,y if x else z,x if else y z,c,operators,0
+What is polymorphism in Python?,The ability of different objects to be used interchangeably through a shared interface,When a function calls itself,When a class inherits from multiple parents,When a class has multiple constructors,a,OOP,0
+What happens if you open a non-existent file in r mode?,It creates the file,It returns None,It opens an empty file,It raises a FileNotFoundError,d,file_io,0
+What does abc.abstractmethod enforce?,That the method is private,That the method is a class method,That any concrete subclass must implement the method or instantiation will fail,That the method returns None,c,OOP,0
+What does match/case do in Python 3.10+?,Regular expression matching,Pattern matching similar to switch/case in other languages,String matching,File pattern matching,b,control_flow,0
+What does __next__ define?,The next item in an iterable when using next(),The next class in the MRO,The next method to call,The successor object,a,OOP,0
+What does importlib.import_module() allow?,Faster imports,Importing a module by name as a string at runtime,Reloading all modules,Listing installed modules,b,modules,0
+What does os.remove() do?,Removes a directory,Removes a file,Removes an environment variable,Removes a module,b,modules,0
+What does the intersection of two sets return?,Elements only in the first set,All unique elements from both sets,Elements in neither set,Elements that exist in both sets,d,data_types,0
+What does __add__ define?,How objects are created,How two objects behave with the + operator,How objects are compared,How objects are deleted,b,OOP,0
+What exception is raised when a dictionary key doesn't exist?,IndexError,KeyError,ValueError,AttributeError,b,error_handling,0
+What does from module import * do?,Imports only private names,Imports all public names from a module into the current namespace,Imports the module object itself,Creates a copy of the module,b,modules,0
+What does __bool__ define?,How an object is compared,How an object is printed,The truthiness of an object when used in a boolean context,How an object is converted to an integer,c,OOP,0
+What does the 'w' mode do when opening a file?,Opens for reading,Opens for reading and writing,Appends to the file,Opens for writing and truncates the file if it already exists,d,file_io,0
+What does re.sub() do?,Submits a pattern to a database,Finds a substring,Replaces occurrences of a pattern with a replacement string,Subtracts characters from a string,c,modules,0
+What exception is raised when accessing an index that doesn't exist?,ValueError,TypeError,KeyError,IndexError,d,error_handling,0
+What is a property setter?,A method that deletes a property,A decorator that converts a method to a class variable,A method decorated with @property_name.setter that allows controlled assignment,A method that returns a property value,c,OOP,0
+What does __getattr__ differ from __getattribute__?,They are identical,__getattr__ is called for every attribute access; __getattribute__ only for missing ones,__getattribute__ is called for every attribute access; __getattr__ only when the attribute isn't found normally,__getattr__ is faster,c,OOP,0
+What does os.environ do?,Lists installed packages,Returns a mapping of environment variables,Returns the current working directory,Lists running processes,b,modules,0
+What does __call__ allow?,Calling a class method,Calling an instance like a function using obj(),Creating a new instance,Calling super(),b,OOP,0
+What is pip?,A Python interpreter,The Python package installer,A Python IDE,A Python debugger,b,modules,0
+What is an OrderedDict?,A dictionary sorted by values,A dictionary that remembers insertion order — useful before Python 3.7,A dictionary sorted by keys,A frozen dictionary,b,data_structures,0
+What is the output of 'hello' + 'world'?,helloworld,error,hello+world,hello world,a,strings,0
+What does 'abc' * 3 produce?,An error,abcabcabc,abc3,"['abc','abc','abc']",b,strings,0
+What does repr() do?,Prints an object,Returns a developer-oriented string representation of an object,Represents an object as bytes,Replicates an object,b,built_ins,0
+What does the 'pass' statement do?,Skips the current iteration,Exits a function,Raises a silent exception,Acts as a placeholder that does nothing,d,syntax,0
+What is the difference between deep copy and shallow copy?,There is no difference,Shallow copy duplicates everything; deep copy does not,Shallow copy shares nested objects; deep copy recursively duplicates all nested objects,Deep copy is faster,c,data_structures,0
+What does tuple unpacking do?,Converts a tuple to a list,"Assigns each element of a tuple to a separate variable like a, b = (1, 2)",Removes duplicates from a tuple,Reverses a tuple,b,syntax,0
+What does callable() check?,If an object is a class,If an object can be called like a function,If an object has a __call__ attribute,If a function has a return statement,b,built_ins,0
+What is duck typing?,A typing system for the Duck class,If an object has the right methods it is treated as that type regardless of its actual class,A type checking library,A way to create type aliases,b,syntax,0
+What does the 'else' clause on a for loop do?,Runs if the loop raises an exception,Runs only if the loop was broken,Runs if the loop completed without hitting a break,Runs on every iteration,c,control_flow,0
+What is the result of 3 ** 2 in Python?,6,9,8,5,b,operators,0
+What does str.join() do?,Splits a string,Joins the elements of an iterable into a single string using the string as a separator,Repeats a string,Finds a substring,b,strings,0
+What does the & operator do with integers?,Logical AND,String concatenation,Bitwise AND,Set union,c,operators,0
+What does str.partition() do?,"Splits the string into three parts: before the separator, the separator, and after it",Splits the string into equal parts,Removes the separator from the string,Partitions the string by word,a,strings,0
+What does str.swapcase() do?,Converts to uppercase,Converts to lowercase,Swaps the case of each character in the string,Reverses the string,c,strings,0
+What does min() do?,Returns the maximum value,Returns the average value,Returns the smallest value in an iterable or among arguments,Returns the first value,c,built_ins,0
+Are dictionaries ordered in Python 3.7+?,"Yes, they maintain insertion order",No — they are unordered,Only if you use OrderedDict,Only when sorted,a,dictionaries,0
+How do you create a deep copy of an object?,Using the copy() method,Using copy.copy(),Using copy.deepcopy(),Using the clone() method,c,data_structures,0
+What keyword turns a function into a generator?,generate,return,next,yield,d,generators,0
+What does 'elif' do?,Ends an if block,Defines an else branch that always runs,Checks an additional condition if the previous if/elif was False,Replaces the else clause,c,control_flow,0
+What does __annotations__ contain?,A list of docstrings,A dictionary of variable and parameter names mapped to their type hints,All comments in a function,A list of decorated methods,b,OOP,0
+What does str.isalpha() do?,Returns True if all characters are alphabetic,Returns True if the string contains at least one letter,Removes non-alphabetic characters,Counts alphabetic characters,a,strings,0
+What is a shallow copy?,A copy made with the copy module,A reference to the same object,An identical duplicate of an object including all nested objects,"A copy that only duplicates the outer object, with nested objects still shared",d,data_structures,0
+What does list.append() do?,Inserts an element at a given index,Adds each element of an iterable individually,Adds a single element to the end,Adds an element to the beginning,c,lists,0
+What does dir() return?,The current directory,A list of names in the current scope or attributes of an object,All Python keywords,The file directory,b,built_ins,0
+What does __iter__ allow?,Printing an object,Making an object iterable with for loops,Comparing two objects,Indexing an object,b,OOP,0
+"What is the output of {'a': 1, 'b': 2}.get('c', 0)?",None,Error,0,c,c,dictionaries,0
+What is the output of 10 % 3?,3,0,1,3.33,c,operators,0
+What is the purpose of the 'else' clause in a try/except block?,Suppresses the exception,Runs only if no exception was raised,Runs if an exception occurs,Always runs,b,error_handling,0
+What is the output of bool([])?,True,0,Error,False,d,data_types,0
+What does dict.items() return?,A list of values,A sorted dictionary,A list of keys,A view of key-value pairs as tuples,d,dictionaries,0
+What does the pickle module do?,Formats strings,Validates JSON,Serializes and deserializes Python objects to and from a byte stream,Compresses files,c,modules,0
+What does range(3) produce?,"[1, 2]","[1, 2, 3]","[0, 1, 2, 3]","[0, 1, 2]",d,built_ins,0
+What is the descriptor protocol?,A way to validate function arguments,A set of dunder methods (__get__ __set__ __delete__) that define attribute access behavior on a class,A protocol for file descriptors,A way to describe a class's attributes,b,OOP,0
+What does a double underscore prefix on an attribute do (e.g. __attr)?,Makes it public,"Triggers name mangling, making it harder to access from outside the class",Marks it as deprecated,Makes it a class variable,b,OOP,0
+What does the async keyword before def indicate?,A faster function,A function that runs in a separate thread,A coroutine that can be paused and resumed,A function that returns a generator,c,syntax,0
+"What does the * operator do in unpacking like a, *b = [1, 2, 3, 4]?",Multiplies the values,Collects remaining values into a list,Ignores the remaining values,Creates a tuple,b,syntax,0
+What does collections.deque's maxlen parameter do?,Sets the minimum size,Automatically removes items from the opposite end when the deque exceeds the limit,Raises an error when full,Freezes the deque at that size,b,data_structures,0
+What does the datetime module provide?,Date validation only,Classes for manipulating dates and times,Time zone databases,Calendar printing only,b,modules,0
+What does await do inside a coroutine?,Calls a synchronous function,Blocks the entire program,Suspends the coroutine until the awaited result is ready,Imports a module asynchronously,c,syntax,0
+Can a set contain a list as an element?,Yes — sets can contain any type,Only if the list is empty,Only single-element lists,No — sets can only contain hashable immutable elements,d,data_types,0
+What does 'hello world'.split('o') return?,"['hell', ' w', 'rld']","['hello', 'world']","['h', 'e', 'l', 'l', 'o']",['hello world'],a,strings,0
+What does str.split() do?,Joins a list into a string,Splits a string into a list of substrings on a delimiter,Removes whitespace,Reverses a string,b,strings,0
+What does __format__ define?,How an object is hashed,How an object responds to the format() function and f-string formatting,How an object is converted to bytes,How an object is copied,b,OOP,0
+What does 'hello'.translate(table) do?,Translates to another language,Applies a translation table to replace or delete characters,Moves characters around,Reverses the string,b,strings,0
+What is inheritance in OOP?,When two classes share the same name,A class that cannot be modified,When a method calls itself,When a class adopts attributes and methods from another class,d,OOP,0
+What does (x**2 for x in range(5)) create?,A tuple,A list,A set,A generator expression,d,comprehensions,0
+What does all() return?,True if at least one element is truthy,True if the iterable is not empty,True if all elements are truthy,True if no elements are falsy,c,built_ins,0
+What does the | operator do with integers?,Logical OR,Bitwise OR,Set intersection,String joining,b,operators,0
+What does __add__ define?,Addition of two modules,The += operation,The behavior of the + operator between two objects,String concatenation only,c,OOP,0
+What is a while loop?,A loop that runs a fixed number of times,A loop that runs as long as a condition is True,A loop that iterates over a sequence,A loop that never terminates,b,control_flow,0
+What does str.endswith() do?,Returns the last character,Adds a suffix to the string,Removes the last character,Checks if a string ends with a specified suffix,d,strings,0
+What module is used for threading in Python?,multiprocessing,concurrent,thread,threading,d,modules,0
+What does list.index() do?,Returns the number of occurrences of a value,Returns the last index of a value,Returns the first index of a given value,Returns all indices of a value,c,lists,0
+What does the ABC module provide?,Abstract Base Classes for defining interfaces,Alphabetical sorting,Basic class templates,Automatic method generation,a,OOP,0
+What does weakref.ref() do?,Creates a copy of an object,Creates a strong reference,Creates a reference that doesn't prevent garbage collection,Counts references to an object,c,modules,0
+What does @dataclass do?,Creates a metaclass,Automatically generates __init__ __repr__ and __eq__ based on class annotations,Freezes a class so it cannot be modified,Creates an abstract class,b,OOP,0
+What does file.readline() do?,Reads all lines,Reads a single line from the file,Reads a specified number of characters,Reads the last line,b,file_io,0
+What does 'is not' check?,If two values are unequal,If two objects are not the same object in memory,If a value is not a given type,If an attribute does not exist,b,operators,0
+What does [row[i] for row in matrix] do?,Extracts a row from a matrix,Flattens a matrix,Extracts a column from a matrix,Transposes a matrix,c,comprehensions,1
+What is a slot in __slots__?,A position in a queue,An attribute name that instances are allowed to have — replacing the instance __dict__,A method placeholder,A type annotation,b,OOP,0
+What is the output of [0] * 3?,"[0, 0, 0]",[0],Error,[000],a,lists,0
+What is a staticmethod typically used for?,Accessing class variables,Creating instances,Utility functions that don't need access to the class or instance,Defining abstract methods,c,OOP,0
+What is the difference between a list and a deque for queue operations?,They perform the same,Lists are faster for all operations,deque provides O(1) pops from the left vs O(n) for lists,deque is slower,c,data_structures,0
+What is the difference between bytes and bytearray?,They are identical,bytes is mutable; bytearray is immutable,bytes is immutable; bytearray is mutable,bytearray can only hold strings,c,data_types,0
+What does the 'finally' block do in a try/except?,Suppresses exceptions,Always runs regardless of whether an exception occurred,Runs only if no exception occurs,Runs only if an exception occurs,b,error_handling,0
+What is the default metaclass in Python?,object,ABCMeta,type,base,c,OOP,0
+What is the difference between eval() and exec()?,They are identical,eval() evaluates expressions and returns a value; exec() executes statements and returns None,exec() returns a value; eval() does not,eval() is for numbers; exec() is for strings,b,built_ins,0
+What happens if you call list.pop() on an empty list?,Returns None,Returns 0,Returns an empty list,Raises an IndexError,d,lists,1
+What is a dictionary comprehension?,A way to sort a dictionary,A way to invert a dictionary,A concise syntax for building a dictionary using a loop,A method to merge two dictionaries,c,comprehensions,1
+What is __init__.py used for?,Initializing variables,Marking a directory as a Python package,Defining the main function,Creating a virtual environment,b,modules,0
+What does sorted() return?,It sorts the list in place,A new sorted list,A sorted tuple,A sorted set,b,built_ins,0
+What is the purpose of NotImplemented (not NotImplementedError)?,It is the same as NotImplementedError,It is returned from binary dunder methods to signal the operation isn't supported for the given type,It suppresses exceptions,It is used in abstract methods,b,OOP,0
+What is the difference between a class and an instance?,There is no difference,A class is a blueprint; an instance is an object created from that class,An instance is a blueprint; a class is created from it,A class can only have one instance,b,OOP,0
+What is string immutability?,Strings can be changed in place,Strings cannot be modified after creation — operations return new strings,Strings have a fixed length,Strings cannot contain numbers,b,strings,0
+How can you create a context manager using a generator?,Using the @contextmanager decorator from contextlib with a function that uses yield,By defining __init__ and __del__,By using the with keyword inside a generator,By importing the context module,a,syntax,0
+What does getattr() do?,Gets an attribute from a module,Returns the value of a named attribute of an object with an optional default,Gets the type of an attribute,Gets all attributes,b,built_ins,0
+What does isinstance() do?,Converts an object to a class,Checks if an object is an instance of a given class,Returns the type of an object,Checks if two objects are identical,b,OOP,0
+What is the output of print(type(3.14))?,<class 'float'>,<class 'double'>,<class 'int'>,<class 'number'>,a,data_types,0
+What does the 'while' loop do?,Loops a fixed number of times,Repeats a block as long as a condition is True,Loops through a list only,Executes once then checks the condition,b,control_flow,0
+What does a docstring do?,Runs when a function is called,Documents a function class or module and is accessible via __doc__,Adds type hints,Prevents a function from being called,b,syntax,0
+What does the eq dunder method define?,How an object is copied,How an object is printed,How two objects are compared with ==,How an object is deleted,c,OOP,0
+Why should you use 'is None' instead of '== None'?,There is no difference,== None can raise an exception,is None checks identity which is always correct; == None can be overridden by __eq__,is None is faster for large objects,c,operators,0
+What does @staticmethod indicate?,The method belongs to an instance,The method receives cls as its first argument,The method cannot be called from an instance,The method does not receive self or cls,d,OOP,0
+What does shutil.copy() do?,Copies a directory,Moves a file,Copies a file to a destination,Copies the contents of a file to a string,c,modules,0
+What does len('hello') return?,4,3,6,5,d,strings,0
+What is the output of f'{10:04d}'?,10,0010,  10,1000,b,strings,0
+What does the 'global' keyword do?,Creates a new global variable,Imports a global module,Declares that a name inside a function refers to the global scope,Prevents a variable from being modified,c,syntax,0
+What does argparse.ArgumentParser do?,Parses JSON files,Parses Python source files,Provides a framework for parsing command-line arguments,Validates function arguments,c,modules,0
+What is a nested list?,A list with only numbers,A list inside a dictionary,A list that contains other lists as elements,A sorted list,c,lists,0
+What does the 'continue' statement do?,Exits the loop,Skips the rest of the current iteration and moves to the next,Restarts the loop from the top,Raises an error,b,control_flow,0
+Which built-in function returns the largest value in a list?,max(),high(),largest(),top(),a,built_ins,0
+What does the csv module provide?,Functions for reading and writing CSV files,String splitting functions,Comma-separated variable types,Database connectivity,a,modules,0
+What is the output of print(0.1 + 0.2 == 0.3)?,True,Error,0.3,False,d,data_types,0
+How do you start a comment in Python?,//,/*,#,--,c,syntax,0
+What does exec() do?,Exits the program,Executes a string as Python code including statements,Validates code syntax,Compiles code to bytecode,b,built_ins,0
+What does {x: x**2 for x in range(5)} produce?,A set of squares,A list of tuples,"{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}","[0, 1, 4, 9, 16]",c,comprehensions,0
+What does __getitem__ allow?,Printing an object,Iterating with for loops only,Indexing an object with obj[key],Hashing an object,c,OOP,0
+What does the unittest module provide?,Unit conversion utilities,A framework for writing and running test cases,Performance testing tools,Code coverage analysis,b,modules,0
+How do you check if an element exists in a list?,list.has(element),list.contains(element),element in list,list.exists(element),c,lists,0
+What is the output of 2 ** 3 ** 2?,64,512,36,12,b,operators,0
+"What is the output of [1, 2, 3][1:]?","[1, 2]","[2, 3]",[1],[3],b,lists,0
+What does yield do in a generator?,Returns a value and terminates the function,Pauses the function and yields a value — resuming where it left off on next iteration,Raises a StopIteration,Creates a new generator,b,generators,0
+What is a mixin class?,A class that replaces inheritance,A class with no methods,"A small class that provides specific functionality through multiple inheritance, not meant to stand alone",A class that cannot be instantiated,c,OOP,0
+"What is the output of [1, 2, 3] + [4, 5]?","[1, 2, 3, 4, 5]","[5, 7, 3]",Error,"[[1, 2, 3], [4, 5]]",a,lists,0
+What does enumerate() do?,Returns the length of an iterable,Converts a list to a dictionary,Returns index-value pairs when iterating,Sorts an iterable,c,built_ins,0
+What does pip install requests do?,Creates a new module called requests,Downloads and installs the requests package from PyPI,Imports the requests module,Updates Python,b,modules,0
+What is the output of: x = 5; print('yes') if x > 3 else print('no')?,no,Error,5,yes,d,control_flow,0
+What does 'hello'[1] return?,e,h,l,o,a,strings,0
+"What does hasattr(obj, 'x') do?",Returns the value of x,Sets x to None,Checks if obj has an attribute named x,Deletes attribute x,c,built_ins,0
+What does __reduce__ define?,How an object is garbage collected,How an object is serialized by pickle,How an object is compared,How an object is printed,b,OOP,0
+What does max() return?,The sum of an iterable,The last item in an iterable,The largest item in an iterable,The most common item,c,built_ins,0
+What is the time complexity of appending to a list?,O(n),O(1) amortized,O(log n),O(n^2),b,data_structures,0
+What does the walrus operator (:=) do?,Compares two values,Assigns a value within an expression,Checks type equality,Creates a constant,b,operators,0
+How do you merge two dictionaries in Python 3.9+?,dict1.merge(dict2),dict1 + dict2,dict1 | dict2,dict1.extend(dict2),c,dictionaries,0
+What is a deadlock in threading?,A thread that runs forever,A situation where two or more threads wait on each other indefinitely,A locked file,A thread with no return value,b,modules,0
+"What does {k: v for k, v in zip(keys, values)} create?",A list of tuples,A set,A dictionary from keys and values using a comprehension,A tuple of pairs,c,comprehensions,1
+What does collections.Counter do?,Creates a sorted dictionary,Counts the occurrences of elements in an iterable and returns a dict-like object,Counts only integers,Filters duplicate values,b,data_structures,0
+What is a ValueError?,An error when a variable is undefined,An error when a function receives an argument of the right type but inappropriate value,An error when dividing by zero,An error when a file is not found,b,error_handling,0
+"What does range(1, 10, 2) produce?","[1, 3, 5, 7, 9]","[1, 2, 3, 4, 5]","[2, 4, 6, 8, 10]","[1, 3, 5, 7]",a,control_flow,0
+What is the difference between remove() and pop()?,They are identical,remove() takes a value; pop() takes an index and returns the removed item,remove() takes an index; pop() takes a value,pop() raises an error if the item is not found,b,lists,1
+What does struct.pack() do?,Packs a list into a tuple,Converts Python values into a bytes object according to a format string,Compresses a file,Creates a C struct class,b,modules,0
+What is a virtual environment in Python?,A simulated operating system,An isolated Python environment with its own packages and interpreter,A debugging mode,A type of IDE,b,modules,0
+What does the __name__ variable contain when a script is run directly?,The filename,The module name,__main__,None,c,modules,0
+What does str.ljust() do?,Left-strips the string,Left-justifies the string within a given width by padding on the right,Finds the leftmost character,Splits from the left,b,strings,0
+What does the json module's json.loads() do?,Parses a JSON string into a Python object,Converts a Python object to a JSON string,Validates JSON syntax,Writes a Python object to a JSON file,a,modules,0
+What does the 'in' operator do when used with a dictionary?,Iterates over all items,Checks if a key-value pair exists,Checks if a value exists,Checks if a key exists,d,operators,0
+What does str.count() do?,Returns the length of the string,Returns the number of non-overlapping occurrences of a substring,Counts only alphabetic characters,Counts the number of words,b,strings,0
+"How do you access the second element of a nested list [[1,2],[3,4]]?",list[1][1],list[2],list[0][1],list[1][0],c,lists,0
 What is operator overloading?,Using operators in expressions,Defining custom behavior for built-in operators in a class using dunder methods,Having multiple operators on one line,Using more than two operands,b,OOP,0
+What does __contains__ allow?,Checking if an object is callable,Defining how an object is printed,Using the in operator with a custom object,Checking if a class has a method,c,OOP,0
+What does pip freeze do?,Stops all running Python processes,Outputs a list of installed packages and their versions,Freezes a virtual environment,Caches installed packages,b,modules,0
+What does str.find() return?,The count of a substring,The last index of a substring,The first index of a substring or -1 if not found,True or False,c,strings,0
+What is the effect of the GIL on multithreading?,It makes multithreading impossible,It prevents CPU-bound threads from running truly in parallel,It speeds up multithreading,It has no effect,b,syntax,0
 What is string concatenation?,Splitting a string into parts,Combining two or more strings using the + operator,Converting a string to a list,Reversing a string,b,strings,0
 What does __enter__ define in a context manager?,How the object is created,The behavior when entering a with block — often returns the resource being managed,The cleanup behavior,How the object is compared,b,OOP,0
+What is a ChainMap?,A map of chains,A view that groups multiple dictionaries into a single mapping,A linked list,A type of generator,b,data_structures,0
+What is an instance variable?,A variable shared by all instances,A variable unique to each instance — typically set in __init__ using self,A variable defined outside the class,A global variable used inside a class,b,OOP,0
+What is a constructor in Python?,The init method,The del method,The new method,The str method,a,OOP,0
+What does sorted() with a key parameter do?,Sorts in reverse order,Sorts using a function to extract a comparison value from each item,Sorts only strings,Sorts in place,b,built_ins,0
+"What does ** do when used with dictionaries like {**dict1, **dict2}?",Raises an error,Creates a nested dictionary,Unpacks and merges the dictionaries,Compares the dictionaries,c,syntax,0
+What does list.extend() do?,Adds a single element to the end,Adds each element of an iterable to the list,Creates a new list,Removes multiple elements,b,lists,0
+What is the difference between inheritance and composition?,They are the same,Inheritance uses is-a relationships; composition uses has-a relationships,Composition requires abstract classes,Inheritance is for methods; composition is for attributes,b,OOP,0
+What does f'{value=}' do in an f-string?,Formats value with = padding,Outputs both the expression and its value — useful for debugging,Raises a SyntaxError,Converts value to a boolean,b,strings,0
+What does list.count() do?,Returns the length of the list,Returns the number of occurrences of a given value,Counts only unique elements,Returns a dictionary of value counts,b,lists,0
+What is a bytes object in Python?,A string encoded in UTF-8,An immutable sequence of integers in the range 0-255,A compressed file,A type of list,b,data_types,0
+How do you check the number of items in a list called mylist?,len(mylist),mylist.count(),mylist.size(),count(mylist),a,lists,0
+What does del mylist[1] do?,Removes the first element,Removes the element at index 1,Clears the list,Removes the last element,b,lists,0
+What is a classmethod typically used for?,Modifying instance variables,Providing alternative constructors or methods that operate on the class rather than instances,Making methods private,Overriding parent methods,b,OOP,0
+What does __init__ do in a class?,Deletes the instance,Returns a string representation,Defines the class name,Initializes a new instance of the class,d,OOP,0
+What does \t represent in a string?,A newline,A space,A tab character,A backslash followed by t,c,strings,0
+What is an event loop in asyncio?,A loop that handles keyboard events,The core scheduler that runs and manages coroutines,A loop that handles file I/O only,A loop that replaces threading,b,modules,0
+What is PEP 8?,A Python Enhancement Proposal for code style guidelines,A Python version,A Python package,A Python error code,a,syntax,0
+Which method converts a string to all uppercase?,str.to_upper(),str.upper(),str.capitalize(),str.cap(),b,strings,0
+What does file.seek() do?,Searches for text in a file,Moves the file cursor to a specified position,Finds a line number,Skips to the end of the file,b,file_io,0
+How does a generator expression differ from a list comprehension?,It uses parentheses and produces values lazily,It uses square brackets,It is always faster,It produces all values at once,a,generators,0
+What does list.copy() do?,Creates a deep copy of the list,Creates a shallow copy of the list,Returns a reference to the same list,Copies the list to a file,b,lists,0
+What does file.read() do?,Reads a fixed number of bytes,Reads one line,Reads all lines into a list,Reads the entire file as a string,d,file_io,0
+What is mypy?,A Python IDE,A static type checker for Python that uses type hints,A testing framework,A Python package manager,b,modules,0
+What does super() do?,Deletes the parent class,Overrides all parent methods,Creates a new subclass,Calls a method from the parent class,d,OOP,0
+What does augmented assignment += do?,Creates a new variable,Checks equality,Updates a variable by adding to it in place,Concatenates two lists always,c,operators,0
+"What does pow(2, 3) return?",6,9,5,8,d,built_ins,0
+What does abs() do?,Returns the ASCII value,Returns the absolute value of a number,Returns the abstract class,Aborts the program,b,built_ins,0
+What does 'and' return in the expression 'a and b'?,Always True,Always False,b if a is truthy — otherwise a,a if a is truthy — otherwise b,c,operators,0
+What does str(42) return?,42,The integer 42,Error,The string '42',d,data_types,0
+What is a namespace in Python?,A naming convention for variables,A mapping from names to objects such as a module's global variables,A type of class,A file naming standard,b,syntax,0
+What does vars() return on a class instance?,The class's methods,A dictionary of the instance's attributes,The MRO,The class's annotations,b,built_ins,0
+What makes an object hashable?,It must be mutable,It must define __eq__ only,It must be a built-in type,It must be immutable and define __hash__ — allowing it to be used as a dict key or set member,d,data_types,0
+What exception is raised when a file is not found?,FileNotFoundError,IOError,OSError,FileError,a,error_handling,0
+What is a nested loop?,A loop that uses break,A loop with an else clause,A loop inside another loop,A loop that calls a function,c,control_flow,0
+What does __len__ returning 0 imply about an object's truthiness?,The object raises a TypeError,The object is True,The object is considered falsy,Nothing — __len__ doesn't affect truthiness,c,OOP,0
+What module can be used for exact decimal arithmetic?,math,fractions,numbers,decimal,d,modules,0
+What is a nested comprehension?,A comprehension with an if clause,A comprehension inside another comprehension,A comprehension inside a function,A comprehension over a dictionary,b,comprehensions,0
+What is the output of f'{3.14159:.2f}'?,3.14,3.14159,3.1,3.15,a,strings,0
+What does str.split() do with no arguments?,Splits on whitespace,Raises an error,Splits on commas,Splits into individual characters,a,strings,0
+"What does open('file.txt', 'rb') do?",Opens for reading in binary mode,Opens for reading backwards,Opens for reading with buffering,Opens a remote file,a,file_io,0
+What is a TypeError?,An error when an operation is applied to an object of an inappropriate type,An error when a variable is undefined,An error when a file is not found,An error when an index is out of range,a,error_handling,0
+What is the output of bool('')?,True,None,Error,False,d,data_types,0
+What is a context manager?,A class that manages memory,An object that defines __enter__ and __exit__ for use with the with statement,A function that catches exceptions,A module that manages imports,b,syntax,0
+What is the diamond problem in multiple inheritance?,When a class inherits from four classes,When two parent classes inherit from the same grandparent causing ambiguity in method resolution,When a class inherits from itself,When inheritance is more than three levels deep,b,OOP,0
+What is an ImportError?,An error when a module has syntax errors,An error when a module cannot be found or a name cannot be imported from it,An error when importing too many modules,An error when circular imports occur,b,error_handling,0
+What does str.encode() do?,Encrypts a string,Converts a string to bytes using a specified encoding,Compresses a string,Hashes a string,b,strings,0
+What does round() do?,Always rounds up,Always rounds down,Rounds a number to a given number of decimal places,Truncates a number,c,built_ins,0
+What is the difference between SyntaxError and TypeError?,They are the same,SyntaxError is a runtime error; TypeError is a compile-time error,SyntaxError occurs when code violates language grammar; TypeError occurs when an operation is applied to an inappropriate type,SyntaxError cannot be caught,c,error_handling,0
+What does re.compile() do?,Runs a regex immediately,Pre-compiles a regex pattern into a reusable object for efficiency,Validates a regex pattern,Converts a string to a regex,b,modules,0
+What does dict.pop() do?,Removes the last item added,Removes and returns the value for a given key,Removes all items,Returns the last value,b,dictionaries,0
+What does itertools.islice() do?,Sorts a slice of an iterable,Returns a slice of an iterable without materializing it all in memory,Flattens nested iterables,Finds the nth element,b,modules,0
+What is the output of print(10 == 10.0)?,False,Error,TypeError,True,d,operators,0
+What does len() return?,The type of an object,The memory size of an object,The number of items in an object,The sum of items in an object,c,built_ins,0
+What does set.symmetric_difference() return?,Elements common to both sets,Elements in either set but not in both,All elements from both sets,An empty set,b,data_types,0
+Are strings mutable or immutable in Python?,Mutable,Immutable,Depends on the content,Depends on the length,b,strings,0
+What does os.path.join() do?,Merges two files,Joins path components in an OS-aware way,Concatenates strings with slashes,Validates a file path,b,modules,0
+What is the difference between w and a file modes?,w appends; a truncates,They are identical,w truncates the file and writes from the beginning; a appends to the end,a creates a new file; w does not,c,file_io,0
+What is the MRO in Python?,Module Registration Object,Main Runtime Object,Method Resolution Order — the order Python searches for methods in inheritance,Memory Read Order,c,OOP,0
+What does the x mode do in open()?,Opens for exclusive reading,Opens for execution,Creates a new file and raises FileExistsError if it already exists,Opens for XML parsing,c,file_io,0
+What does [x**2 for x in range(4)] produce?,"[0, 1, 4, 9]","[1, 4, 9, 16]","[0, 2, 4, 6]","[1, 2, 3, 4]",a,comprehensions,1
+Is ** right-associative or left-associative?,Left-associative,Neither,Both,Right-associative — so 2 ** 3 ** 2 equals 2 ** (3 ** 2),d,operators,0
+What does str.replace() do?,Replaces occurrences of a substring with another string,Finds a substring,Removes whitespace,Splits a string on a delimiter,a,strings,0
+What does __lt__ define?,How objects are printed,How objects are hashed,Behavior for the less-than operator,How objects are copied,c,OOP,0
+What does list.reverse() do?,Returns a new reversed list,Sorts the list in reverse order,Reverses the list in place and returns None,Reverses only the first half,c,lists,0
+What does enumerate() do?,Returns the length of an iterable,Returns pairs of index and value from an iterable,Counts only non-None values,Converts a list to a dictionary,b,built_ins,0
+What is the output of bool(0)?,1,False,True,None,b,data_types,0
+What does file.readlines() do?,Reads only the first line,Reads the file one character at a time,Reads all lines into a list,Reads the entire file as a string,c,file_io,0
+What is a dictionary's underlying implementation in CPython?,A balanced tree,A hash table,A linked list,An array,b,data_structures,0
+What does os.getcwd() return?,The user's home directory,The script's filename,The current working directory as a string,The system's root directory,c,modules,0
+What does file.tell() return?,The file size,The number of lines,The current position of the file cursor,The file name,c,file_io,0
+What is a strong reference vs a weak reference?,They are the same,A weak reference prevents garbage collection; a strong does not,A strong reference keeps an object alive; a weak reference does not prevent garbage collection,A weak reference is faster,c,data_structures,0
+What does a single underscore prefix on a method mean (e.g. _method)?,It is private and cannot be accessed at all,It is a class method,It is a convention indicating it is intended for internal use,It is a magic method,c,OOP,0
+What does the input() function do?,Reads from a file,Reads a line of text from the user via standard input,Imports a module,Returns system input,b,built_ins,0
+What does str.rstrip() do?,Removes leading whitespace,Right-aligns the string,Removes trailing whitespace or specified characters,Removes all whitespace,c,strings,0
+What is a custom exception?,An exception from a third-party library,An exception with a custom message,A user-defined exception class that inherits from Exception,An exception that cannot be caught,c,error_handling,0
+What does the 'raise' keyword do?,Suppresses an exception,Manually triggers an exception,Logs an exception,Catches an exception,b,error_handling,0
+What does @property allow you to do?,Create a read-only class,Define a class method,Access a method like an attribute,Make a method static,c,OOP,0
+What does the format spec :>10 do in an f-string?,Left-aligns in 10 characters,Centers in 10 characters,Right-aligns in a field of 10 characters,Truncates to 10 characters,c,strings,0
+What does set.pop() do?,Removes the last element,Removes and returns an arbitrary element from the set,Removes the first element,Returns the smallest element,b,data_types,0
+What is the output of 10 // 3?,3.33,3,4,1,b,operators,0
+What is the benefit of using __slots__?,Faster method calls,Reduced memory usage per instance and slightly faster attribute access,Automatic type checking,Inheritance optimization,b,OOP,0
+What does str.join() do?,Splits a string into a list,Finds the index of a substring,Combines a list of strings using the string as a separator,Adds a string to another string,c,strings,0
+What does reversed() return?,A sorted iterable,A reversed list,An iterator that yields items in reverse order,A copy of the iterable,c,built_ins,0
+What does the math module provide?,Machine learning tools,String manipulation functions,"Mathematical functions like sqrt, ceil, floor and constants like pi",Matrix operations,c,modules,0
+What is a tuple in Python?,"An immutable, ordered sequence of elements",A mutable ordered sequence,An unordered collection of unique elements,A key-value mapping,a,data_types,0
+What is the output of 'Python'[1:4]?,Pyt,yth,ytho,Pyth,b,strings,0
+What is a defaultdict useful for?,Sorting dictionaries,Providing a default value for missing keys to avoid KeyError,Creating immutable dictionaries,Merging dictionaries,b,data_structures,0
+What does list('abc') return?,['abc'],"['a', 'b', 'c']",[abc],Error,b,data_types,0
+What does the assert statement do?,Prints a debug message,Checks a condition and raises AssertionError if it is False,Assigns a value,Imports a module,b,syntax,0
+What does dict.update() do?,Returns an updated copy of the dictionary,Sorts the dictionary,Merges another dictionary or key-value pairs into the dictionary,Validates dictionary values,c,dictionaries,0
+What does the ~ operator do in Python?,Logical NOT,Floor division,String reversal,Bitwise NOT — inverts all bits,d,operators,0
+"What is the output of type((1,))?",<class 'list'>,<class 'int'>,<class 'tuple'>,<class 'set'>,c,data_types,0
+What is a class variable?,A variable passed to __init__,A variable defined inside a method,A variable shared by all instances — defined inside the class but outside any method,A variable that can only be accessed by class methods,c,OOP,0
+What does str.startswith() do?,Returns the first character,Checks if a string begins with a specified prefix,Removes the first character,Adds a prefix to the string,b,strings,0
+What is the difference between bytes and bytearray?,They are identical,bytearray is immutable; bytes is mutable,bytes is mutable; bytearray is immutable,bytes can only hold ASCII,b,data_types,0
+What does __setitem__ allow?,Setting an attribute by name,Using assignment with indexing like obj[key] = value on a custom object,Setting the length of an object,Setting a class variable,b,OOP,0
+What is the purpose of repr?,To initialize an instance,To compare two objects,To define the string shown to end users,To define an unambiguous string representation for developers,d,OOP,0
+What does 'not in' check?,If a value is not a number,If an iterable is not empty,If a value is absent from an iterable or string,If a key has no value in a dict,c,operators,0
+What does the __repr__ method return?,A user-friendly string,An unambiguous string representation intended for developers and debugging,A boolean value,The object's memory address,b,OOP,0
+What is the output of bool(1)?,False,1,True,None,c,data_types,0
+What does set.add() do?,Merges two sets,Adds a single element to the set,Converts a list to a set,Adds multiple elements,b,data_types,0
+What does the __all__ variable in a module control?,Which classes are public,Which names are exported when from module import * is used,Which methods are inherited,Which files are included,b,modules,0
+What does the len dunder method allow?,Defining string representation,Iterating over an object,Comparing two objects,Using len() on a custom object,d,OOP,0
+What does input() do?,Reads a file,Prints to the console,Reads a line from standard input and returns it as a string,Converts a value to a string,c,built_ins,0
+What does __init_subclass__ allow?,Preventing subclassing,Initializing the parent class automatically,Customizing behavior when a class is subclassed without using a metaclass,Registering subclasses with a decorator,c,OOP,0
+What is the walrus operator in Python?,==,:=,=>,<=,b,operators,0
+What does the pass statement do?,Does nothing; acts as a placeholder,Exits a loop,Skips a loop iteration,Raises an exception,a,syntax,0
+"What does delattr(obj, 'x') do?",Deletes the object obj,Sets x to None,Deletes the attribute x from obj,Returns and removes x,c,built_ins,0
+What does the property() built-in function do?,Creates a class property that cannot be modified,"Creates a managed attribute with optional getter, setter, and deleter methods",Returns the properties of an object,Lists all attributes of a class,b,OOP,0
+What does the collections module provide?,Garbage collection utilities,"Specialized container data types like Counter, deque, defaultdict, and OrderedDict",Database collections,File collection tools,b,modules,0
+What does sys.argv contain?,The system architecture,The Python version,A list of command-line arguments passed to the script,The current working directory,c,modules,0
+What does the elif keyword do?,Ends an if block,Defines an alternative condition if the previous condition was False,Starts a loop,Defines a function,b,control_flow,0
+What is exception chaining?,Catching the same exception twice,Raising a new exception while preserving the original using from,Catching exceptions in a loop,Having nested try/except blocks,b,error_handling,0
+"What does 'abc'.maketrans('a', 'x') do?",Replaces a with x in the string,Creates a translation table mapping a to x,Translates the string to binary,Creates a new string xbc,b,strings,0
+What does re.match() do?,Matches a pattern anywhere in the string,Matches a pattern only at the beginning of the string,Replaces a pattern,Returns all matches,b,modules,0
+What does str.strip() do?,Removes all spaces,Removes leading and trailing whitespace,Splits a string,Converts to lowercase,b,strings,0
+What is the output of print(type(True))?,<class 'bool'>,<class 'int'>,<class 'str'>,<class 'NoneType'>,a,data_types,0
+What is unpacking in Python?,Extracting values from an iterable and assigning them to variables,Importing a module,Decompressing a file,Converting a tuple to a list,a,syntax,0
+Can you modify a tuple after creation?,Yes — tuples are mutable,Only the first element,Only by using a special method,No — tuples are immutable,d,data_types,0
+Can you catch multiple exceptions in one except block?,"Yes, using a tuple of exception types",No — each needs its own block,Only if they share a parent class,Only two at a time,a,error_handling,0
+Which of these creates a set?,set = [],set = {},"set = (1, 2, 3)","set = {1, 2, 3}",d,data_types,0
+What does io.StringIO do?,Reads a file as a stream,Creates an in-memory text stream that behaves like a file object,Converts strings to bytes,Encodes a string,b,modules,0
+What is a dunder method?,A method that starts with a single underscore,A deprecated method,A method with double underscores before and after its name like __init__,A private method,c,OOP,0
+What is the GIL in Python?,Global Import Lock,General Iteration Limit,Global Interpreter Lock — a mutex that allows only one thread to execute Python bytecode at a time,Garbage Instruction Layer,c,syntax,0
+What does json.dumps() do?,Reads a JSON file,Converts a Python object to a JSON string,Deletes a JSON file,Parses a JSON string into a Python object,b,modules,0
+What does itertools.combinations() do?,Returns all possible orderings,Returns all subsequences of a given length without repeated elements,Creates random combinations,Returns the power set,b,modules,0
+What is a walrus operator useful for?,Making code faster,Assigning variables inside expressions to avoid repeated computation,Creating constants,Type checking,b,operators,0
+What does yield from do?,Yields a single value,Delegates iteration to another iterable or sub-generator,Creates a new generator,Yields from a file,b,generators,0
+Can a list contain different data types?,"Yes, lists can hold mixed types",No — only strings,No — only numbers,No — only one type per list,a,lists,0
+What does the 'break' statement do in a loop?,Skips the current iteration,Pauses execution,Exits the loop immediately,Restarts the loop,c,control_flow,0
+Which of these is an immutable data type?,set,tuple,dictionary,list,b,data_types,0
+What does str.title() do?,Converts to uppercase,Converts the first character of each word to uppercase,Converts only the first character to uppercase,Adds a title attribute to the string,b,strings,0
+What is the time complexity of inserting at the beginning of a list?,O(1),O(log n),O(n),O(n^2),c,data_structures,0
+What does a @property decorator do?,Makes an attribute private,Makes a method callable without parentheses by exposing it as an attribute,Makes a method a class method,Makes a method static,b,OOP,0
+What is string interning?,Encoding a string to bytes,Compressing a string,Python reusing the same memory object for identical string literals to save space,Caching a string's hash value,c,strings,0
+"What does list.insert(i, x) do?",Removes the element at index i and replaces it with x,Inserts x at position i,Replaces the element at index i with x,Appends x to the list,b,lists,0
+What does the as keyword do in an except clause?,Creates an alias for the module,Assigns the exception object to a variable,Converts the exception to a string,Suppresses the exception,b,error_handling,0
 What does dict.copy() do?,Creates a deep copy,Creates a shallow copy of the dictionary,Returns a reference to the same dictionary,Copies the dictionary to a file,b,dictionaries,0
+What exception signals that a generator is exhausted?,GeneratorExit,EndOfGenerator,ValueError,StopIteration,d,generators,0
+What is tuple unpacking?,"Assigning each element of a tuple to separate variables, such as a, b = (1, 2)",Converting a tuple to a list,Removing elements from a tuple,Reversing a tuple,a,data_types,0
+How do you create a virtual environment?,python -m venv myenv,python --virtual myenv,pip install virtualenv myenv,python create-env myenv,a,modules,0
+What does __contains__ define?,How an object is iterated,How an object handles the 'del' keyword,The behavior of the 'in' operator for membership testing,How an object is hashed,c,OOP,0
+What does the // operator do?,Regular division,Modulo operation,Exponentiation,Floor division — divides and rounds down to the nearest integer,d,operators,0
+Which of these is the correct way to import a module?,require math,import math,include math,using math,b,modules,0
+What is a NameError?,An error when a name is used before being assigned or defined,An error when a name is too long,An error when two variables share a name,An error when a module name is wrong,a,error_handling,0
+Which of these creates an empty dictionary?,(),set(),{},[],c,dictionaries,0
 "What mode string opens a file for writing, creating it if it doesn't exist?",r,x,w,a,c,file_io,0
-What does str.ljust() do?,Left-strips the string,Left-justifies the string within a given width by padding on the right,Finds the leftmost character,Splits from the left,b,strings,0
+What is a NameError?,An error when a variable name is too long,An error when a name is used before being defined,An error when two variables have the same name,An error when a class has no name,b,error_handling,0
+What does math.sqrt() do?,Returns the square of a number,Returns the square root of a number,Returns a random number,Returns the absolute value,b,modules,0
+What is a metaclass?,A class that inherits from object,A class used to create other classes — the class of a class,A class with only static methods,A base class for all exceptions,b,OOP,0
+What does a triple-quoted string allow?,Faster string creation,Strings with no whitespace,Multi-line strings without escape characters,Immutable strings,c,strings,0
+What does list.clear() do?,Deletes the list variable,Removes all items from the list,Resets items to None,Removes only duplicate items,b,lists,0
+What does itertools.product() do?,Multiplies numbers,Computes the Cartesian product of input iterables,Creates a product catalog,Produces all permutations,b,modules,0
+When should you use threading vs multiprocessing?,Always use threading,Always use multiprocessing,Threading for I/O-bound tasks; multiprocessing for CPU-bound tasks,They are interchangeable,c,modules,0
+What does the logging module provide?,A way to print to the console,A flexible framework for emitting log messages with different severity levels,Error handling utilities,File writing utilities,b,modules,0
+What does str.lstrip() do?,Removes leading whitespace or specified characters,Removes trailing whitespace,Removes all whitespace,Left-aligns the string,a,strings,0
+What does itertools.permutations() do?,Returns combinations with replacement,"Returns all possible orderings of a given length, where order matters",Returns unique elements,Randomly shuffles an iterable,b,modules,0
+How do you create a namedtuple?,"from collections import namedtuple; Point = namedtuple('Point', ['x', 'y'])",namedtuple(x=1 y=2),tuple.named('Point'),import namedtuple,a,data_structures,0
+What does set.remove() do?,Removes an element if present without error,Removes an element and raises a KeyError if not found,Removes all elements,Removes a random element,b,data_types,0
+What does threading.Lock() prevent?,Race conditions by allowing only one thread to hold the lock at a time,Deadlocks automatically,Multiple processes from running,File access by other programs,a,modules,0
+What is the difference between an iterable and an iterator?,They are the same,An iterable can produce an iterator; an iterator maintains state and produces values with __next__,An iterator is a type of list,An iterable uses yield,b,syntax,0
+What is encapsulation?,When a function is wrapped by a decorator,The ability of a class to inherit from multiple parents,Bundling data and methods within a class and restricting direct access,When a method returns self,c,OOP,0
+What does complex() create in Python?,A complicated data structure,A complex number with real and imaginary parts,A compressed number,An encrypted number,b,data_types,0
+What does the bool type inherit from in Python?,float,str,object,int,d,data_types,0
+What is monkey patching?,Modifying a class or module at runtime by adding or changing attributes or methods,A debugging technique,A type of inheritance,A testing framework feature,a,syntax,0
+"What does [1, 2, 3][::-1] return?","[3, 2, 1]","[1, 2, 3]","[1, 3]",Error,a,lists,0
 What is an infinite loop?,A loop that runs exactly 1000 times,A loop that runs very fast,A loop whose condition never becomes False so it runs forever,A loop inside another loop,c,control_flow,0
 What does set.issubset() check?,If two sets are equal,If the set has no elements,If all elements of the set are in another set,If the set contains only numbers,c,data_types,0
-What does super() do?,Deletes the parent class,Overrides all parent methods,Creates a new subclass,Calls a method from the parent class,d,OOP,0
-What are Python's four scope levels?,"Public, Protected, Private, Global","File, Function, Class, Module","Local, Enclosing, Global, Built-in (LEGB)","Instance, Class, Module, Package",c,syntax,0
-What does chained comparison like 1 < x < 10 do?,Raises a SyntaxError,Only works with integers,Evaluates left to right as separate comparisons joined by and,Checks if x equals 1 or 10,c,operators,0
-What does re.compile() do?,Runs a regex immediately,Pre-compiles a regex pattern into a reusable object for efficiency,Validates a regex pattern,Converts a string to a regex,b,modules,0
-What is the GIL in Python?,Global Import Lock,General Iteration Limit,Global Interpreter Lock — a mutex that allows only one thread to execute Python bytecode at a time,Garbage Instruction Layer,c,syntax,0
-What is a descriptor in Python?,A docstring for a class,A way to sort objects,"An object that defines __get__, __set__, or __delete__ to customize attribute access",A type of decorator,c,OOP,0
-What does isinstance() check?,If two objects are identical,If an object is a subclass,If an object is an instance of a given class or any of its subclasses,If a class is abstract,c,built_ins,0
-What does match/case do in Python 3.10+?,Regular expression matching,Pattern matching similar to switch/case in other languages,String matching,File pattern matching,b,control_flow,0
-What is a deadlock in threading?,A thread that runs forever,A situation where two or more threads wait on each other indefinitely,A locked file,A thread with no return value,b,modules,0
-What does dict.keys() return?,A list of key-value pairs,A view of all keys in the dictionary,A list of values,A sorted list of keys,b,dictionaries,0
-What is a closure?,A class with no methods,A decorator with no arguments,A function that remembers variables from its enclosing scope even after that scope has closed,A function that raises an exception,c,functions,0
-What does yield do in a generator?,Returns a value and terminates the function,Pauses the function and yields a value — resuming where it left off on next iteration,Raises a StopIteration,Creates a new generator,b,generators,0
-What does str.title() do?,Converts to uppercase,Converts the first character of each word to uppercase,Converts only the first character to uppercase,Adds a title attribute to the string,b,strings,0
-What does os.path.exists() do?,Returns the size of a file,Creates a file,Deletes a file,Checks whether a file or directory exists,d,modules,0
-What does the __repr__ method return?,A user-friendly string,An unambiguous string representation intended for developers and debugging,A boolean value,The object's memory address,b,OOP,0
-What does any() return?,True if the iterable is not empty,True if all elements are truthy,True if at least one element is truthy,True if no elements are truthy,c,built_ins,0
-What is a class variable?,A variable passed to __init__,A variable defined inside a method,A variable shared by all instances — defined inside the class but outside any method,A variable that can only be accessed by class methods,c,OOP,0
-What is the output of f'{10:04d}'?,10,0010,  10,1000,b,strings,0
-How do you merge two dictionaries in Python 3.9+?,dict1.merge(dict2),dict1 + dict2,dict1 | dict2,dict1.extend(dict2),c,dictionaries,0
-What is the difference between parameters and arguments?,They are the same thing,Parameters are in the function call; arguments are in the definition,Parameters are in the function definition; arguments are the values passed in the call,Parameters are for classes; arguments are for functions,c,functions,0
-"What does typing.Tuple[int, str, float] indicate?",A named tuple,A type hint for a tuple with exactly those three types in that order,A tuple of any length,A tuple that can hold any type,b,functions,0
-What is a metaclass?,A class that inherits from object,A class used to create other classes — the class of a class,A class with only static methods,A base class for all exceptions,b,OOP,0
-What does itertools.combinations() do?,Returns all possible orderings,Returns all subsequences of a given length without repeated elements,Creates random combinations,Returns the power set,b,modules,0
-What is PEP 8?,A Python Enhancement Proposal for code style guidelines,A Python version,A Python package,A Python error code,a,syntax,0
-What is the time complexity of accessing an element by index in a list?,O(n),O(log n),O(n^2),O(1),d,data_structures,0
-What is the correct way to define a function in Python?,define myFunc():,func myFunc():,def myFunc():,function myFunc():,c,functions,0
-What does [row[i] for row in matrix] do?,Extracts a row from a matrix,Flattens a matrix,Extracts a column from a matrix,Transposes a matrix,c,comprehensions,1
-What does the 'global' keyword do?,Deletes a variable,Converts a local variable to a constant,Allows a function to access and modify a variable from the global scope,Creates a new global variable,c,functions,0
-What is the output of print(10 == 10.0)?,False,Error,TypeError,True,d,operators,0
-What does 'hello world'.split('o') return?,"['hell', ' w', 'rld']","['hello', 'world']","['h', 'e', 'l', 'l', 'o']",['hello world'],a,strings,0
-What does exec() do?,Exits the program,Executes a string as Python code including statements,Validates code syntax,Compiles code to bytecode,b,built_ins,0
-What does __class_getitem__ enable?,Runtime type checking,Subscript syntax on a class like MyClass[int] — used to support generic types,Indexing class attributes,Creating parameterized metaclasses,b,OOP,0
-What is the time complexity of appending to a list?,O(n),O(1) amortized,O(log n),O(n^2),b,data_structures,0
-Why should you use 'is None' instead of '== None'?,There is no difference,== None can raise an exception,is None checks identity which is always correct; == None can be overridden by __eq__,is None is faster for large objects,c,operators,0
-What does isinstance() do?,Converts an object to a class,Checks if an object is an instance of a given class,Returns the type of an object,Checks if two objects are identical,b,OOP,0
-What does the __all__ variable in a module control?,Which classes are public,Which names are exported when from module import * is used,Which methods are inherited,Which files are included,b,modules,0
-What does the datetime module provide?,Date validation only,Classes for manipulating dates and times,Time zone databases,Calendar printing only,b,modules,0
-What is scope in Python?,The size of a variable,The lifetime of a function,The region of code where a name is accessible,The number of arguments a function takes,c,syntax,0
-What does a @property decorator do?,Makes an attribute private,Makes a method callable without parentheses by exposing it as an attribute,Makes a method a class method,Makes a method static,b,OOP,0
-What is the output of bool(0)?,1,False,True,None,b,data_types,0
-What is the output of print(type(True))?,<class 'bool'>,<class 'int'>,<class 'str'>,<class 'NoneType'>,a,data_types,0
-What does file.writelines() do?,Writes a single line,Writes an iterable of strings to the file,Writes lines with automatic newlines,Writes a numbered list,b,file_io,0
-What does the json module's json.loads() do?,Parses a JSON string into a Python object,Converts a Python object to a JSON string,Validates JSON syntax,Writes a Python object to a JSON file,a,modules,0
-What does map() do?,Maps keys to values in a dictionary,Applies a function to every item in an iterable and returns an iterator,Filters items from a list,Sorts an iterable,b,functions,0
-What does itertools.islice() do?,Sorts a slice of an iterable,Returns a slice of an iterable without materializing it all in memory,Flattens nested iterables,Finds the nth element,b,modules,0
-What happens if a function has no return statement?,It raises an error,It returns 0,It returns None,It returns an empty string,c,functions,0
-What is a nested list?,A list with only numbers,A list inside a dictionary,A list that contains other lists as elements,A sorted list,c,lists,0
-What does str.join() do?,Splits a string,Joins the elements of an iterable into a single string using the string as a separator,Repeats a string,Finds a substring,b,strings,0
-What does *args allow in a function?,Any number of positional arguments,Only string arguments,Exactly two positional arguments,Any number of keyword arguments,a,functions,0
-What does the >> operator do?,Greater than comparison,Right shift — shifts bits to the right,String de-indentation,Appends to a file,b,operators,0
-What does @dataclass do?,Creates a metaclass,Automatically generates __init__ __repr__ and __eq__ based on class annotations,Freezes a class so it cannot be modified,Creates an abstract class,b,OOP,0
-How do you check the number of items in a list called mylist?,len(mylist),mylist.count(),mylist.size(),count(mylist),a,lists,0
-What does json.dumps() do?,Reads a JSON file,Converts a Python object to a JSON string,Deletes a JSON file,Parses a JSON string into a Python object,b,modules,0
-What does the intersection of two sets return?,Elements only in the first set,All unique elements from both sets,Elements in neither set,Elements that exist in both sets,d,data_types,0
-"What does [1, 2, 3][::-1] return?","[3, 2, 1]","[1, 2, 3]","[1, 3]",Error,a,lists,0
-What does @classmethod indicate?,The method is private,The method receives self as its first argument,The method receives cls as its first argument,The method is inherited automatically,c,OOP,0
-"What does delattr(obj, 'x') do?",Deletes the object obj,Sets x to None,Deletes the attribute x from obj,Returns and removes x,c,built_ins,0
-What does str.encode() do?,Encrypts a string,Converts a string to bytes using a specified encoding,Compresses a string,Hashes a string,b,strings,0
-What is the output of print(0.1 + 0.2 == 0.3)?,True,Error,0.3,False,d,data_types,0
-What does the csv module provide?,Functions for reading and writing CSV files,String splitting functions,Comma-separated variable types,Database connectivity,a,modules,0
-What does math.floor() do?,Rounds a number up,Returns the absolute value,Rounds a number down to the nearest integer,Returns the floor division result,c,modules,0
-What does collections.Counter do?,Creates a sorted dictionary,Counts the occurrences of elements in an iterable and returns a dict-like object,Counts only integers,Filters duplicate values,b,data_structures,0
-What does list.extend() do?,Adds a single element to the end,Adds each element of an iterable to the list,Creates a new list,Removes multiple elements,b,lists,0
-"What do map(), filter(), and reduce() have in common?",They all modify lists in place,They all return dictionaries,They are all higher-order functions that take a function and an iterable,They all require lambda functions,c,functions,0
-What does generator.throw() do?,Throws away the generator,Throws an exception at the point where the generator is paused,Sends a value to the generator,Restarts the generator,b,generators,0
-Are strings mutable or immutable in Python?,Mutable,Immutable,Depends on the content,Depends on the length,b,strings,0
-What does __call__ allow?,Calling a class method,Calling an instance like a function using obj(),Creating a new instance,Calling super(),b,OOP,0
-What is a lambda function?,A class method,A function with no return value,A recursive function,An anonymous function defined in a single line,d,functions,0
-What does object.__subclasshook__ allow?,Preventing subclassing,Customizing the behavior of issubclass() checks for ABCs,Automatically registering subclasses,Overriding MRO calculation,b,OOP,0
-What is a namespace in Python?,A naming convention for variables,A mapping from names to objects such as a module's global variables,A type of class,A file naming standard,b,syntax,0
-What is the MRO in Python?,Module Registration Object,Main Runtime Object,Method Resolution Order — the order Python searches for methods in inheritance,Memory Read Order,c,OOP,0
-What does os.path.join() do?,Merges two files,Joins path components in an OS-aware way,Concatenates strings with slashes,Validates a file path,b,modules,0
-What does set.pop() do?,Removes the last element,Removes and returns an arbitrary element from the set,Removes the first element,Returns the smallest element,b,data_types,0
-What is the purpose of str?,To define the string representation shown to end users,To delete an instance,To define what is returned when repr() is called,To initialize an instance,a,OOP,0
-What does 'not in' check?,If a value is not a number,If an iterable is not empty,If a value is absent from an iterable or string,If a key has no value in a dict,c,operators,0
-What is a list's underlying implementation in CPython?,A linked list,A hash table,A dynamic array,A binary tree,c,data_structures,0
-What does str.endswith() do?,Returns the last character,Adds a suffix to the string,Removes the last character,Checks if a string ends with a specified suffix,d,strings,0
-What does the else clause on a for loop do?,Runs if the loop encounters an error,Always runs after the loop,Runs only if the loop completes without hitting a break,Runs if the loop body is empty,c,control_flow,0
-What does list.count() do?,Returns the length of the list,Returns the number of occurrences of a given value,Counts only unique elements,Returns a dictionary of value counts,b,lists,0
-What does functools.reduce() do?,Reduces memory usage,Removes elements from a list,"Applies a function cumulatively to items of an iterable, reducing it to a single value",Filters and maps at the same time,c,functions,0
-What does __add__ define?,Addition of two modules,The += operation,The behavior of the + operator between two objects,String concatenation only,c,OOP,0
-What happens if you call list.pop() on an empty list?,Returns None,Returns 0,Returns an empty list,Raises an IndexError,d,lists,1
-What does typing.Protocol define?,A network protocol interface,A structural subtyping interface — a class satisfies it if it has the required methods regardless of inheritance,An abstract base class requiring registration,A type alias,b,functions,0
-"What does {k: v for k, v in zip(keys, values)} create?",A list of tuples,A set,A dictionary from keys and values using a comprehension,A tuple of pairs,c,comprehensions,1
-Why is eval() considered dangerous?,It is slow,It can execute arbitrary code — potentially harmful with untrusted input,It only works with numbers,It modifies global variables,b,built_ins,0
-What does __slots__ do?,Limits the methods a class can have,Restricts the attributes an instance can have — saving memory by not using __dict__,Defines default values for attributes,Makes a class immutable,b,OOP,0
-What does the // operator do?,Regular division,Modulo operation,Exponentiation,Floor division — divides and rounds down to the nearest integer,d,operators,0
-What does __getattr__ differ from __getattribute__?,They are identical,__getattr__ is called for every attribute access; __getattribute__ only for missing ones,__getattribute__ is called for every attribute access; __getattr__ only when the attribute isn't found normally,__getattr__ is faster,c,OOP,0
-How do you create a deep copy of an object?,Using the copy() method,Using copy.copy(),Using copy.deepcopy(),Using the clone() method,c,data_structures,0
-What does str.find() return?,The count of a substring,The last index of a substring,The first index of a substring or -1 if not found,True or False,c,strings,0
-How can you implement a queue efficiently in Python?,Using a list with append() and pop(0),Using a set,Using collections.deque with append() and popleft(),Using a dictionary,c,data_structures,0
-What does a triple-quoted string allow?,Faster string creation,Strings with no whitespace,Multi-line strings without escape characters,Immutable strings,c,strings,0
-What is an instance variable?,A variable shared by all instances,A variable unique to each instance — typically set in __init__ using self,A variable defined outside the class,A global variable used inside a class,b,OOP,0
-What module is used for threading in Python?,multiprocessing,concurrent,thread,threading,d,modules,0
-What does math.ceil() do?,Rounds a number down,Rounds a number up to the nearest integer,Returns the ceiling of a string,Clamps a number to a range,b,modules,0
-What does str.index() do compared to str.find()?,They are identical,index() returns -1 if not found; find() raises an error,index() raises a ValueError if not found; find() returns -1,index() only searches from the end,c,strings,0
-What does file.read() do?,Reads a fixed number of bytes,Reads one line,Reads all lines into a list,Reads the entire file as a string,d,file_io,0
-What is the output of 10 // 3?,3.33,3,4,1,b,operators,0
-What does set.symmetric_difference() return?,Elements common to both sets,Elements in either set but not in both,All elements from both sets,An empty set,b,data_types,0
-What does max() return?,The sum of an iterable,The last item in an iterable,The largest item in an iterable,The most common item,c,built_ins,0
-What does str.upper() do?,Capitalizes only the first letter,Converts all characters to uppercase,Converts all characters to lowercase,Removes lowercase letters,b,strings,0
-"What is the output of len({'a': 1, 'b': 2, 'c': 3})?",6,2,3,9,c,dictionaries,0
-What does string interpolation with f-strings look like?,"f'Hello, {name}'","'Hello, ' + name","'Hello, %s' % name","format('Hello, {}', name)",a,strings,0
-"What does tuple([1, 2, 3]) return?","(1, 2, 3)","[1, 2, 3]","{1, 2, 3}",Error,a,data_types,0
-What does generator.close() do?,Deletes the generator from memory,Closes the file associated with the generator,Raises GeneratorExit inside the generator to stop it,Pauses the generator,c,generators,0
-What does __bool__ define?,How an object is compared,How an object is printed,The truthiness of an object when used in a boolean context,How an object is converted to an integer,c,OOP,0
-What does abs() do?,Returns the ASCII value,Returns the absolute value of a number,Returns the abstract class,Aborts the program,b,built_ins,0
-What is the difference between w and a file modes?,w appends; a truncates,They are identical,w truncates the file and writes from the beginning; a appends to the end,a creates a new file; w does not,c,file_io,0
-What does [i for i in range(10) if i % 2 == 0] produce?,"[1, 3, 5, 7, 9]","[0, 2, 4, 6, 8]","[2, 4, 6, 8, 10]","[0, 1, 2, 3, 4]",b,comprehensions,0
-What does the input() function do?,Reads from a file,Reads a line of text from the user via standard input,Imports a module,Returns system input,b,built_ins,0
-What does file.write() do?,Writes a list to a file,Writes a string to the file,Writes bytes to the file,Writes a dictionary to the file,b,file_io,0
-What does augmented assignment += do?,Creates a new variable,Checks equality,Updates a variable by adding to it in place,Concatenates two lists always,c,operators,0
-Is __del__ guaranteed to be called?,Yes — always called immediately,Only when using the del keyword,No — it depends on the garbage collector and may not be called in all situations,Only for class variables,c,OOP,1
 What does eval() do?,Evaluates a string as a Python expression and returns the result,Validates Python syntax,Runs a Python file,Checks variable types,a,built_ins,0
-What is the benefit of using __slots__?,Faster method calls,Reduced memory usage per instance and slightly faster attribute access,Automatic type checking,Inheritance optimization,b,OOP,0
-What does pathlib.Path.glob() do?,Searches the internet,Returns a list of files matching a pattern in a directory,Compresses files,Validates a path,b,modules,0
-What does functools.lru_cache do?,Limits the number of function arguments,Caches the results of a function so repeated calls with the same arguments avoid recomputation,Logs function call order,Sorts function output,b,functions,0
-What is unpacking in Python?,Extracting values from an iterable and assigning them to variables,Importing a module,Decompressing a file,Converting a tuple to a list,a,syntax,0
-What does len('hello') return?,4,3,6,5,d,strings,0
-What does __getitem__ allow?,Getting an attribute by name,Iterating over an object,Using indexing syntax like obj[key] on a custom object,Getting the length of an object,c,OOP,0
-What does functools.wraps do in a decorator?,Speeds up the wrapped function,Copies the original function's metadata to the wrapper so it isn't lost,Makes the wrapper recursive,Prevents the decorator from running twice,b,functions,0
-What is the output of: x = 5; print('yes') if x > 3 else print('no')?,no,Error,5,yes,d,control_flow,0
-What does file.tell() return?,The file size,The number of lines,The current position of the file cursor,The file name,c,file_io,0
-What does map() do?,Filters items from a list,Applies a function to every item in an iterable and returns an iterator,Creates a dictionary from a list,Reduces a list to one value,b,functions,0
-"What is the output of (lambda x, y: x + y)(3, 4)?",34,Error,12,7,d,functions,0
-"What does open('file.txt', 'r+') do?",Opens for reading only,Opens for writing only,Opens for both reading and writing without truncating,Opens for appending,c,file_io,0
-What is the output of 'Python'[1:4]?,Pyt,yth,ytho,Pyth,b,strings,0
-What does typing.Union do?,Creates a union of two sets,"Indicates a value can be one of several types like Union[int, str]",Merges two classes,Combines two functions,b,functions,0
-What does the 'global' keyword do?,Creates a new global variable,Imports a global module,Declares that a name inside a function refers to the global scope,Prevents a variable from being modified,c,syntax,0
-What does __iter__ allow?,Printing an object,Making an object iterable with for loops,Comparing two objects,Indexing an object,b,OOP,0
-What does the % operator do in Python?,Divides two numbers,Returns the quotient,Returns the remainder of division,Raises to a power,c,operators,0
-What does {x: x**2 for x in range(5)} produce?,A set of squares,A list of tuples,"{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}","[0, 1, 4, 9, 16]",c,comprehensions,0
-What does repr() do?,Prints an object,Returns a developer-oriented string representation of an object,Represents an object as bytes,Replicates an object,b,built_ins,0
-What is mypy?,A Python IDE,A static type checker for Python that uses type hints,A testing framework,A Python package manager,b,modules,0
-What does str.partition() do?,"Splits the string into three parts: before the separator, the separator, and after it",Splits the string into equal parts,Removes the separator from the string,Partitions the string by word,a,strings,0
-What is the difference between bytes and bytearray?,They are identical,bytes is mutable; bytearray is immutable,bytes is immutable; bytearray is mutable,bytearray can only hold strings,c,data_types,0
-What is the time complexity of inserting at the beginning of a list?,O(1),O(log n),O(n),O(n^2),c,data_structures,0
-What does the __str__ method return?,A developer-oriented representation,A boolean value,A user-friendly string representation of the object,The class name,c,OOP,0
-What is the mutable default argument trap fix?,Use None as the default and create the object inside the function body,Use a tuple instead of a list,Use a global variable,Use __init__ only,a,functions,0
-What does __init__ do in a class?,Deletes the instance,Returns a string representation,Defines the class name,Initializes a new instance of the class,d,OOP,0
-Why does 0.1 + 0.2 not equal 0.3 in Python?,Python has a bug,Floats are stored as strings,Floating-point numbers have limited precision in binary representation,Python rounds all decimals,c,data_types,0
-What does the | operator do with integers?,Logical OR,Bitwise OR,Set intersection,String joining,b,operators,0
-Does Python enforce type hints at runtime?,Yes — it raises TypeError for wrong types,Only in strict mode,Only with mypy installed,No — type hints are for documentation and static analysis tools only,d,functions,0
 What is the purpose of using 'with' when opening a file?,It loads the entire file into memory,It opens the file faster,It prevents other programs from opening the file,It automatically closes the file when the block exits,d,file_io,0
-What does 'is not' check?,If two values are unequal,If two objects are not the same object in memory,If a value is not a given type,If an attribute does not exist,b,operators,0
-How do you check if an element exists in a list?,list.has(element),list.contains(element),element in list,list.exists(element),c,lists,0
-What does a decorator do?,Renames a function,Deletes a function after use,Wraps a function to add behavior before or after it runs,Adds color to terminal output,c,functions,0
-Is ** right-associative or left-associative?,Left-associative,Neither,Both,Right-associative — so 2 ** 3 ** 2 equals 2 ** (3 ** 2),d,operators,0
-What does the pathlib module provide?,String manipulation utilities,An object-oriented interface for filesystem paths,Database connection tools,Networking utilities,b,modules,0
-What does file.seek() do?,Searches for text in a file,Moves the file cursor to a specified position,Finds a line number,Skips to the end of the file,b,file_io,0
-What does \n represent in a string?,A tab character,A newline character,A null character,A backslash followed by n,b,strings,0
-What is a shallow copy?,A copy made with the copy module,A reference to the same object,An identical duplicate of an object including all nested objects,"A copy that only duplicates the outer object, with nested objects still shared",d,data_structures,0
-What is a nested comprehension?,A comprehension with an if clause,A comprehension inside another comprehension,A comprehension inside a function,A comprehension over a dictionary,b,comprehensions,0
-What does the len dunder method allow?,Defining string representation,Iterating over an object,Comparing two objects,Using len() on a custom object,d,OOP,0
-What is a first-class function?,The first function defined in a module,"A function that can be passed around as a value — assigned to variables, passed as arguments",A function that runs first,A function with no parameters,b,functions,1
-What does file.readline() do?,Reads all lines,Reads a single line from the file,Reads a specified number of characters,Reads the last line,b,file_io,0
-What does the eq dunder method define?,How an object is copied,How an object is printed,How two objects are compared with ==,How an object is deleted,c,OOP,0
-What does def indicate in Python?,A variable declaration,A loop definition,A function definition,A class definition,c,functions,0
-What does 'hello'[1] return?,e,h,l,o,a,strings,0
-What is a namedtuple?,A dictionary with named keys,A tuple subclass with named fields accessible by name as well as index,A named variable,A tuple that can be modified,b,data_structures,0
-What does sys.argv contain?,The Python version,The current working directory,A list of command-line arguments passed to the script,The system environment variables,c,modules,0
-Why is from module import * generally discouraged?,It is slower,It can cause name conflicts and makes it unclear where names come from,It doesn't work with packages,It only imports functions,b,modules,0
-What does str.find() return if the substring is not found?,None,It raises an error,0,-1,d,strings,0
-What does asyncio.run() do?,Starts a new thread,Runs a coroutine as the entry point of an asyncio program,Creates an event loop without running it,Runs a function in a subprocess,b,modules,0
-What happens when a generator function is called?,It runs the function body immediately,It returns a generator object without executing the body until iterated,It returns None,It raises an error,b,generators,0
-What is the walrus operator in Python?,==,:=,=>,<=,b,operators,0
-What does dict.update() do?,Returns an updated copy of the dictionary,Sorts the dictionary,Merges another dictionary or key-value pairs into the dictionary,Validates dictionary values,c,dictionaries,0
-What does if __name__ == '__main__' do?,Defines the main function,Checks if the script is being run directly and not imported,Checks for syntax errors,Initializes the module,b,modules,0
-What does the bool type inherit from in Python?,float,str,object,int,d,data_types,0
-What does a docstring do?,Runs when a function is called,Documents a function class or module and is accessible via __doc__,Adds type hints,Prevents a function from being called,b,syntax,0
-What does __add__ define?,How objects are created,How two objects behave with the + operator,How objects are compared,How objects are deleted,b,OOP,0
-What does __format__ define?,How an object is hashed,How an object responds to the format() function and f-string formatting,How an object is converted to bytes,How an object is copied,b,OOP,0
-What does range(3) produce?,"[1, 2]","[1, 2, 3]","[0, 1, 2, 3]","[0, 1, 2]",d,built_ins,0
-What does None represent in Python?,An empty string,The absence of a value,A false value,The number zero,b,data_types,0
-Can a list contain different data types?,"Yes, lists can hold mixed types",No — only strings,No — only numbers,No — only one type per list,a,lists,0
-What does typing.Callable indicate?,A callable class,A type hint indicating a function or callable object with optional argument and return type signatures,A method that can be overridden,A built-in function,b,functions,0
+What does import os allow you to do?,Create GUIs,Interact with the operating system,Open database connections,Connect to the internet,b,modules,0
 What does the with statement use behind the scenes?,Decorators,Generators,Context managers that implement __enter__ and __exit__,Exception handlers,c,syntax,0
-What does os.remove() do?,Removes a directory,Removes a file,Removes an environment variable,Removes a module,b,modules,0
-What does the ^ operator do with integers?,Exponentiation,Bitwise XOR,Logical XOR,String formatting,b,operators,0
-What does the nonlocal keyword do?,Creates a new local variable,Accesses a variable from the global scope,Accesses and modifies a variable from an enclosing non-global scope,Deletes a variable,c,functions,0
-What does 'hello' * 3 return?,hellohellohello,hello3,Error,hello hello hello,a,strings,0
-What is the output of f'{3.14159:.2f}'?,3.14,3.14159,3.1,3.15,a,strings,0
-Why is monkey patching generally discouraged?,It is too slow,It can make code unpredictable and hard to debug,It doesn't work in Python 3,It requires special imports,b,syntax,0
-What does re.findall() do?,Finds the first match,Returns a list of all non-overlapping matches of a pattern in a string,Replaces all matches,Splits a string by a pattern,b,modules,0
-What does reversed() return?,A sorted list in reverse,A new reversed list,A reverse iterator over a sequence,The last element,c,built_ins,0
-What does filter() do?,Removes duplicate values,Sorts an iterable,Returns an iterator of items for which a function returns True,Maps values to keys,c,functions,0
-"What does setattr(obj, 'x', 10) do?",Creates a new class,Sets the attribute x on obj to 10,Raises an error,Checks if obj has attribute x,b,built_ins,0
-What does the x mode do in open()?,Opens for exclusive reading,Opens for execution,Creates a new file and raises FileExistsError if it already exists,Opens for XML parsing,c,file_io,0
-What is pip?,A Python interpreter,The Python package installer,A Python IDE,A Python debugger,b,modules,0
-"What does pow(2, 3) return?",6,9,5,8,d,built_ins,0
-What is the mutable default argument trap?,Using a list or dict as a default parameter is safe,Default mutable arguments are re-created each call,A mutable default is shared across all calls because it is evaluated once at definition time,Python raises a warning when you use a mutable default,c,functions,0
-What does __len__ returning 0 imply about an object's truthiness?,The object raises a TypeError,The object is True,The object is considered falsy,Nothing — __len__ doesn't affect truthiness,c,OOP,0
-What does iter() do?,Iterates over an object,Returns an iterator from an iterable,Creates a new list,Counts iterations,b,built_ins,0
-What does struct.pack() do?,Packs a list into a tuple,Converts Python values into a bytes object according to a format string,Compresses a file,Creates a C struct class,b,modules,0
-What does sys.path contain?,All Python files,A list of directories Python searches when importing modules,The PATH environment variable,All installed packages,b,modules,0
-What does (x**2 for x in range(5)) create?,A tuple,A list,A set,A generator expression,d,comprehensions,0
-What is duck typing?,A typing system for the Duck class,If an object has the right methods it is treated as that type regardless of its actual class,A type checking library,A way to create type aliases,b,syntax,0
-What does collections.defaultdict do?,Creates a dictionary with a default value factory for missing keys,Creates an ordered dictionary,Creates an immutable dictionary,Creates a counter,a,modules,0
-What does the math module provide?,Machine learning tools,String manipulation functions,"Mathematical functions like sqrt, ceil, floor and constants like pi",Matrix operations,c,modules,0
-How does Python resolve the diamond problem?,It raises an error,It ignores one parent,Using the C3 linearization algorithm to determine the MRO,It picks the first parent alphabetically,c,OOP,0
-"What is the output of {'a': 1, 'b': 2}.get('c', 0)?",None,Error,0,c,c,dictionaries,0
-What does the dataclasses.dataclass decorator do?,Creates a database table,"Automatically generates __init__, __repr__, and other methods for a class",Makes a class immutable,Converts a class to a dictionary,b,OOP,0
-What does set.remove() do?,Removes an element if present without error,Removes an element and raises a KeyError if not found,Removes all elements,Removes a random element,b,data_types,0
-What does the hash() function do?,Encrypts a string,Returns the hash value of an object used in dictionaries and sets,Returns the memory address,Checks if an object is hashable,b,built_ins,0
-What does str.format() do?,Formats a file for writing,Checks the format of a string,Formats a string by replacing placeholders with values,Converts a string to a specific encoding,c,strings,0
-What does callable() check?,If an object is a class,If an object can be called like a function,If an object has a __call__ attribute,If a function has a return statement,b,built_ins,0
-What is the difference between eval() and exec()?,They are identical,eval() evaluates expressions and returns a value; exec() executes statements and returns None,exec() returns a value; eval() does not,eval() is for numbers; exec() is for strings,b,built_ins,0
-"What is the output of sorted([3, 1, 2], reverse=True)?","[3, 2, 1]","[1, 2, 3]","[2, 1, 3]",Error,a,lists,0
-Which of these is the correct way to import a module?,require math,import math,include math,using math,b,modules,0
-What is the difference between __str__ and __repr__?,They are identical,__repr__ is for end users; __str__ is for developers,__str__ is for end users; __repr__ is for developers and should be unambiguous,__str__ is only used in f-strings,c,OOP,0
-How can you implement a stack in Python?,Using a dictionary,Using a set,Using a list with append() and pop(),Using a tuple,c,data_structures,0
-What does \t represent in a string?,A newline,A space,A tab character,A backslash followed by t,c,strings,0
-What is cooperative multitasking in asyncio?,Threads sharing CPU time,Coroutines voluntarily yielding control at await points rather than being preempted,A scheduler that forces context switches,A form of multiprocessing,b,modules,0
-What does list('abc') return?,['abc'],"['a', 'b', 'c']",[abc],Error,b,data_types,0
-What does __new__ do?,Initializes an instance,Creates a new class at runtime,Allocates memory and creates a new instance before __init__ is called,Defines a new method,c,OOP,0
-What does os.listdir() return?,A list of all files on the system,A list of entries in the specified directory,A list of open file handles,A list of environment variables,b,modules,0
-What does os.makedirs() do?,Creates a single directory,Creates a directory and all necessary parent directories,Creates a file,Removes a directory,b,modules,0
-What does the * separator do in a function signature?,Makes all following parameters keyword-only,Makes all parameters optional,Collects extra positional arguments,Unpacks a list,a,functions,0
-What does @property.setter allow?,Setting a class variable,Defining write behavior for a property attribute,Making a property immutable,Calling a method as a setter,b,OOP,0
-What does str.isalpha() do?,Returns True if all characters are alphabetic,Returns True if the string contains at least one letter,Removes non-alphabetic characters,Counts alphabetic characters,a,strings,0
-"What does ** do when used with dictionaries like {**dict1, **dict2}?",Raises an error,Creates a nested dictionary,Unpacks and merges the dictionaries,Compares the dictionaries,c,syntax,0
-What does the collections module provide?,Garbage collection utilities,"Specialized container data types like Counter, deque, defaultdict, and OrderedDict",Database collections,File collection tools,b,modules,0
-What does itertools.product() do?,Multiplies numbers,Computes the Cartesian product of input iterables,Creates a product catalog,Produces all permutations,b,modules,0
-What is a sentinel value?,A value that triggers an exception,A special unique object used to signal a specific condition like a missing default,A default return value,A constant defined in the typing module,b,syntax,0
-What does list.append() do?,Inserts an element at a given index,Adds each element of an iterable individually,Adds a single element to the end,Adds an element to the beginning,c,lists,0
-"What does random.randint(1, 10) do?",Returns a random float between 1 and 10,Returns a random integer between 1 and 10 inclusive,Returns a random integer between 0 and 10,Returns a random integer between 1 and 9,b,modules,0
-What is an iterator in Python?,A for loop,An object that implements __iter__ and __next__ to produce values one at a time,A list index,A generator function,b,syntax,0
-What is the difference between inheritance and composition?,They are the same,Inheritance uses is-a relationships; composition uses has-a relationships,Composition requires abstract classes,Inheritance is for methods; composition is for attributes,b,OOP,0
-What is string immutability?,Strings can be changed in place,Strings cannot be modified after creation — operations return new strings,Strings have a fixed length,Strings cannot contain numbers,b,strings,0
-What does getattr() do?,Gets an attribute from a module,Returns the value of a named attribute of an object with an optional default,Gets the type of an attribute,Gets all attributes,b,built_ins,0
-What does __missing__ do in a dict subclass?,Raises a KeyError immediately,Defines behavior when a key is not found — used by defaultdict,Returns None for missing keys,Removes the key after access,b,OOP,0
-What does collections.deque's maxlen parameter do?,Sets the minimum size,Automatically removes items from the opposite end when the deque exceeds the limit,Raises an error when full,Freezes the deque at that size,b,data_structures,0
-What is the output of: for i in range(3): print(i)?,1 2 3,0 1 2 3,0 1 2,1 2,c,control_flow,0
-What keyword turns a function into a generator?,generate,return,next,yield,d,generators,0
-What does str.strip() do?,Removes all spaces,Removes leading and trailing whitespace,Splits a string,Converts to lowercase,b,strings,0
-What does str.rstrip() do?,Removes leading whitespace,Right-aligns the string,Removes trailing whitespace or specified characters,Removes all whitespace,c,strings,0
-What is a stack data structure?,A FIFO structure,A structure that allows random access,A LIFO (Last In First Out) structure,A sorted structure,c,data_structures,0
-What is a generator function?,A function that returns a list,A function that uses yield to produce values one at a time lazily,A function that generates random numbers,A function that creates classes,b,generators,0
-What is the difference between a class and an instance?,There is no difference,A class is a blueprint; an instance is an object created from that class,An instance is a blueprint; a class is created from it,A class can only have one instance,b,OOP,0
-What is the output of 'hello' + 'world'?,helloworld,error,hello+world,hello world,a,strings,0
-What does the random module's random.choice() do?,Returns a random element from a sequence,Shuffles a list,Returns a random integer,Returns a random float,a,modules,0
-What is the output of bool(1)?,False,1,True,None,c,data_types,0
-What is a defaultdict useful for?,Sorting dictionaries,Providing a default value for missing keys to avoid KeyError,Creating immutable dictionaries,Merging dictionaries,b,data_structures,0
-What does dict.pop() do?,Removes the last item added,Removes and returns the value for a given key,Removes all items,Returns the last value,b,dictionaries,0
-What does typing.TypedDict do?,Creates a dict subclass with enforced types at runtime,Defines a dictionary type with specific key names and value types for static analysis,Creates an immutable dictionary,Converts a typed class to a dict,b,functions,0
-What does reversed() return?,A sorted iterable,A reversed list,An iterator that yields items in reverse order,A copy of the iterable,c,built_ins,0
-What does contextlib.suppress do?,Silences print statements,Suppresses specified exceptions within a with block without needing try/except,Suppresses all output,Suppresses warnings only,b,modules,0
-What are the standard logging levels in Python?,"print, warn, error, crash","LOW, MEDIUM, HIGH, CRITICAL","DEBUG, INFO, WARNING, ERROR, CRITICAL","TRACE, DEBUG, INFO, FATAL",c,modules,0
-What does [x**2 for x in range(4)] produce?,"[0, 1, 4, 9]","[1, 4, 9, 16]","[0, 2, 4, 6]","[1, 2, 3, 4]",a,comprehensions,1
-What does **kwargs allow in a function?,Exactly one keyword argument,Any number of keyword arguments,Only integer keyword arguments,Any number of positional arguments,b,functions,0
-When should you use threading vs multiprocessing?,Always use threading,Always use multiprocessing,Threading for I/O-bound tasks; multiprocessing for CPU-bound tasks,They are interchangeable,c,modules,0
-How do you create a virtual environment?,python -m venv myenv,python --virtual myenv,pip install virtualenv myenv,python create-env myenv,a,modules,0
-What does the & operator do with integers?,Logical AND,String concatenation,Bitwise AND,Set union,c,operators,0
-What does list.reverse() do?,Returns a new reversed list,Sorts the list in reverse order,Reverses the list in place and returns None,Reverses only the first half,c,lists,0
-What is a while loop?,A loop that runs a fixed number of times,A loop that runs as long as a condition is True,A loop that iterates over a sequence,A loop that never terminates,b,control_flow,0
-Can dictionaries be nested?,No — dictionaries cannot contain other dictionaries,Only one level deep,"Yes, dictionaries can contain other dictionaries as values",Only if the inner dictionary is empty,c,dictionaries,0
-What does __getitem__ allow?,Printing an object,Iterating with for loops only,Indexing an object with obj[key],Hashing an object,c,OOP,0
-What does __contains__ allow?,Checking if an object is callable,Defining how an object is printed,Using the in operator with a custom object,Checking if a class has a method,c,OOP,0
-What is a default parameter value?,A parameter that must be provided,A parameter that raises an error if not provided,A value assigned to a parameter that is used if no argument is given,A global variable,c,functions,0
-What does a double underscore prefix on an attribute do (e.g. __attr)?,Makes it public,"Triggers name mangling, making it harder to access from outside the class",Marks it as deprecated,Makes it a class variable,b,OOP,0
-How can you create a context manager using a generator?,Using the @contextmanager decorator from contextlib with a function that uses yield,By defining __init__ and __del__,By using the with keyword inside a generator,By importing the context module,a,syntax,0
-"What does divmod(10, 3) return?","(3, 1)","(1, 3)","(3.33, 1)","(10, 3)",a,built_ins,0
-Which method converts a string to all uppercase?,str.to_upper(),str.upper(),str.capitalize(),str.cap(),b,strings,0
-What does __hash__ define?,The object's type,A custom hash value for use in sets and as dictionary keys,The object's memory address,The object's string representation,b,OOP,0
-What is the output of 2 ** 3 ** 2?,64,512,36,12,b,operators,0
-How do you start a comment in Python?,//,/*,#,--,c,syntax,0
-What does importlib.import_module() allow?,Faster imports,Importing a module by name as a string at runtime,Reloading all modules,Listing installed modules,b,modules,0
-What does str.split() do with no arguments?,Splits on whitespace,Raises an error,Splits on commas,Splits into individual characters,a,strings,0
-What is a ChainMap?,A map of chains,A view that groups multiple dictionaries into a single mapping,A linked list,A type of generator,b,data_structures,0
-How does a generator expression differ from a list comprehension?,It uses parentheses and produces values lazily,It uses square brackets,It is always faster,It produces all values at once,a,generators,0
-What is the @ symbol used for in Python?,String formatting,Modulo operation,Matrix multiplication or applying a decorator,Bitwise AND,c,functions,0
-"What is the output of [1, 2, 3] + [4, 5]?","[1, 2, 3, 4, 5]","[5, 7, 3]",Error,"[[1, 2, 3], [4, 5]]",a,lists,0
-What is string interning?,Encoding a string to bytes,Compressing a string,Python reusing the same memory object for identical string literals to save space,Caching a string's hash value,c,strings,0
-What does itertools.chain() do?,Links two generators permanently,Chains function calls together,Chains multiple iterables into a single iterable,Creates an infinite loop,c,modules,0
-What does the 'w' mode do when opening a file?,Opens for reading,Opens for reading and writing,Appends to the file,Opens for writing and truncates the file if it already exists,d,file_io,0
-What is the result of 3 ** 2 in Python?,6,9,8,5,b,operators,0
-"What is the result of len([1, [2, 3], 4])?",4,2,5,3,d,lists,0
-What does sorted() return?,It sorts the list in place,A new sorted list,A sorted tuple,A sorted set,b,built_ins,0
-What is the difference between re.search() and re.fullmatch()?,They are identical,re.search() only checks the start; re.fullmatch() checks everywhere,re.search() finds a match anywhere in the string; re.fullmatch() requires the entire string to match,re.fullmatch() is deprecated,c,modules,0
-What does typing.Literal indicate?,The value is a string,A type hint restricting a variable to specific literal values,A constant that cannot be reassigned,A value evaluated at compile time,b,functions,0
-What is the difference between bytes and bytearray?,They are identical,bytearray is immutable; bytes is mutable,bytes is mutable; bytearray is immutable,bytes can only hold ASCII,b,data_types,0
-How do you create a namedtuple?,"from collections import namedtuple; Point = namedtuple('Point', ['x', 'y'])",namedtuple(x=1 y=2),tuple.named('Point'),import namedtuple,a,data_structures,0
-What does __delitem__ allow?,Deleting an attribute,Deleting an item using del obj[key] on a custom object,Deleting the entire object,Deleting a class,b,OOP,0
-What does the 'else' clause on a for loop do?,Runs if the loop raises an exception,Runs only if the loop was broken,Runs if the loop completed without hitting a break,Runs on every iteration,c,control_flow,0
-What is an iterable in Python?,A function that loops,"Any object that can return an iterator, such as lists, strings, and dictionaries",A type of generator,A loop variable,b,syntax,0
-What does the ABC module provide?,Abstract Base Classes for defining interfaces,Alphabetical sorting,Basic class templates,Automatic method generation,a,OOP,0
-What does str(42) return?,42,The integer 42,Error,The string '42',d,data_types,0
-What is an OrderedDict?,A dictionary sorted by values,A dictionary that remembers insertion order — useful before Python 3.7,A dictionary sorted by keys,A frozen dictionary,b,data_structures,0
-What does __del__ do?,Deletes a class,Defines cleanup behavior when an object is about to be garbage collected,Deletes an attribute,Prevents deletion of an object,b,OOP,0
-What is the LEGB rule in Python?,A debugging technique,A sorting algorithm,"The scope resolution order: Local, Enclosing, Global, Built-in",A naming convention,c,functions,0
-What is a staticmethod typically used for?,Accessing class variables,Creating instances,Utility functions that don't need access to the class or instance,Defining abstract methods,c,OOP,0
-What does threading.Lock() prevent?,Race conditions by allowing only one thread to hold the lock at a time,Deadlocks automatically,Multiple processes from running,File access by other programs,a,modules,0
-What does round() do?,Floors a number,Ceils a number,Rounds a number to a given number of decimal places,Truncates decimal places,c,built_ins,0
-What is a dunder method?,A method that starts with a single underscore,A deprecated method,A method with double underscores before and after its name like __init__,A private method,c,OOP,0
-What is the output of [0] * 3?,"[0, 0, 0]",[0],Error,[000],a,lists,0
-What does the append mode 'a' do when opening a file?,Overwrites existing content,Raises an error if the file exists,Opens for writing at the end without truncating existing content,Opens for reading and writing,c,file_io,0
-What does the pass statement do?,Does nothing; acts as a placeholder,Exits a loop,Skips a loop iteration,Raises an exception,a,syntax,0
-Can a set contain a list as an element?,Yes — sets can contain any type,Only if the list is empty,Only single-element lists,No — sets can only contain hashable immutable elements,d,data_types,0
-What does dir() return?,The current directory,A list of names in the current scope or attributes of an object,All Python keywords,The file directory,b,built_ins,0
-What does the 'nonlocal' keyword do?,Makes a variable global,Declares that a name refers to the nearest enclosing scope that is not global,Deletes a variable from the enclosing scope,Prevents a variable from being shadowed,b,syntax,0
-What does vars() return?,A list of variable names,The __dict__ of an object or the current local symbol table if no argument is given,All global variables,A count of local variables,b,built_ins,0
-What does __next__ define?,The next item in an iterable when using next(),The next class in the MRO,The next method to call,The successor object,a,OOP,0
-What does os.getcwd() return?,The user's home directory,The script's filename,The current working directory as a string,The system's root directory,c,modules,0
-What does the / in a function signature enforce?,All arguments to be keyword-only,All arguments after / to be positional-only,All arguments before / to be positional-only,Optional arguments,c,functions,0
-What does enumerate() do?,Returns the length of an iterable,Converts a list to a dictionary,Returns index-value pairs when iterating,Sorts an iterable,c,built_ins,0
-What makes an object hashable?,It must be mutable,It must define __eq__ only,It must be a built-in type,It must be immutable and define __hash__ — allowing it to be used as a dict key or set member,d,data_types,0
-Can dictionary keys be mutable types like lists?,Yes — any type can be a key,Only if the list is empty,Only if the list has one element,No — dictionary keys must be hashable and immutable,d,dictionaries,0
-What is the default metaclass in Python?,object,ABCMeta,type,base,c,OOP,0
 What is string slicing?,Replacing part of a string,Splitting a string into a list,Converting a string to lowercase,Extracting a substring using index notation,d,strings,0
-What is the purpose of NotImplemented (not NotImplementedError)?,It is the same as NotImplementedError,It is returned from binary dunder methods to signal the operation isn't supported for the given type,It suppresses exceptions,It is used in abstract methods,b,OOP,0
-What is the difference between __new__ and __init__?,They are identical,__new__ creates the instance; __init__ initializes it,__init__ creates the instance; __new__ initializes it,__new__ is for class methods; __init__ is for instance methods,b,OOP,0
-What does itertools.permutations() do?,Returns combinations with replacement,"Returns all possible orderings of a given length, where order matters",Returns unique elements,Randomly shuffles an iterable,b,modules,0
-What is the effect of the GIL on multithreading?,It makes multithreading impossible,It prevents CPU-bound threads from running truly in parallel,It speeds up multithreading,It has no effect,b,syntax,0
-What does str.startswith() do?,Returns the first character,Checks if a string begins with a specified prefix,Removes the first character,Adds a prefix to the string,b,strings,0
-What is a keyword argument?,An argument that uses a reserved Python keyword,An argument passed using the parameter name in the function call,An argument that can only be a string,An argument that must come first,b,functions,0
-What is the memory advantage of generators over lists?,Generators use more memory,No advantage,Generators produce values on demand so they don't store all values in memory at once,Generators compress data,c,generators,0
-What is the output of bool([])?,True,0,Error,False,d,data_types,0
-What does str.center() do?,Centers the string in the console,Pads the string with a fill character to center it within a given width,Finds the middle character,Removes characters from both ends,b,strings,0
-What is a walrus operator useful for?,Making code faster,Assigning variables inside expressions to avoid repeated computation,Creating constants,Type checking,b,operators,0
-What does str.swapcase() do?,Converts to uppercase,Converts to lowercase,Swaps the case of each character in the string,Reverses the string,c,strings,0
-What is the difference between a set and a frozenset?,There is no difference,A frozenset is ordered; a set is not,A frozenset is immutable; a set is mutable,A set cannot contain numbers,c,data_types,0
-What does @abstractmethod do?,Makes a method private,Makes a method static,Marks a method that must be implemented by subclasses,Makes a method return None,c,OOP,0
-What does typing.List[int] indicate?,A list that only contains integers at runtime,A type hint indicating a list of integers,A frozen list,An integer stored in a list,b,functions,0
-What does the id() function return?,The type of an object,The value of an object,The unique identity or memory address of an object,The size of an object,c,built_ins,0
-What does len() return?,The type of an object,The memory size of an object,The number of items in an object,The sum of items in an object,c,built_ins,0
-Are dictionaries ordered in Python 3.7+?,"Yes, they maintain insertion order",No — they are unordered,Only if you use OrderedDict,Only when sorted,a,dictionaries,0
-What does sys.exit() do?,Terminates the current function,Raises SystemExit to end the program,Kills all threads,Closes all open files,b,modules,0
-What happens if you assign a value to an existing key in a dictionary?,A duplicate key is created,It raises a KeyError,The old value is overwritten with the new value,The dictionary becomes invalid,c,dictionaries,0
-What does typing.overload allow?,Overriding a parent method,Defining multiple type signatures for the same function for static type checkers,Running a function multiple times,Creating a fallback function,b,functions,0
-What exception signals that a generator is exhausted?,GeneratorExit,EndOfGenerator,ValueError,StopIteration,d,generators,0
-What does set.add() do?,Merges two sets,Adds a single element to the set,Converts a list to a set,Adds multiple elements,b,data_types,0
-What is a bytes object in Python?,A string encoded in UTF-8,An immutable sequence of integers in the range 0-255,A compressed file,A type of list,b,data_types,0
-What does list.remove() do?,Removes the item at a given index,Clears the list,Removes the first occurrence of a given value,Removes the last item,c,lists,1
-What does @staticmethod indicate?,The method belongs to an instance,The method receives cls as its first argument,The method cannot be called from an instance,The method does not receive self or cls,d,OOP,0
-What does the format spec :>10 do in an f-string?,Left-aligns in 10 characters,Centers in 10 characters,Right-aligns in a field of 10 characters,Truncates to 10 characters,c,strings,0
-What does min() do?,Returns the maximum value,Returns the average value,Returns the smallest value in an iterable or among arguments,Returns the first value,c,built_ins,0
-What is the difference between global and nonlocal?,They are identical,global accesses module-level variables; nonlocal accesses enclosing function variables,nonlocal creates global variables,global works inside classes; nonlocal works inside functions,b,functions,0
-What is a dictionary's underlying implementation in CPython?,A balanced tree,A hash table,A linked list,An array,b,data_structures,0
-What is a docstring?,A string literal used to document a function or class,A multiline variable,A comment inside a loop,A type of string formatting,a,functions,0
-What does float('3.14') return?,The string '3.14',The integer 3,The float 3.14,An error,c,data_types,0
-What is a dictionary comprehension?,A way to sort a dictionary,A way to invert a dictionary,A concise syntax for building a dictionary using a loop,A method to merge two dictionaries,c,comprehensions,1
-Which of these creates a set?,set = [],set = {},"set = (1, 2, 3)","set = {1, 2, 3}",d,data_types,0
-What does re.match() do?,Matches a pattern anywhere in the string,Matches a pattern only at the beginning of the string,Replaces a pattern,Returns all matches,b,modules,0
-What does 'and' return in the expression 'a and b'?,Always True,Always False,b if a is truthy — otherwise a,a if a is truthy — otherwise b,c,operators,0
-Which of these is an immutable data type?,set,tuple,dictionary,list,b,data_types,0
-What is the purpose of repr?,To initialize an instance,To compare two objects,To define the string shown to end users,To define an unambiguous string representation for developers,d,OOP,0
-What does the 'continue' statement do?,Exits the loop,Skips the rest of the current iteration and moves to the next,Restarts the loop from the top,Raises an error,b,control_flow,0
-What does enumerate() do?,Returns the length of an iterable,Returns pairs of index and value from an iterable,Counts only non-None values,Converts a list to a dictionary,b,built_ins,0
-What does __annotations__ contain?,A list of docstrings,A dictionary of variable and parameter names mapped to their type hints,All comments in a function,A list of decorated methods,b,OOP,0
-"What does hasattr(obj, 'x') do?",Returns the value of x,Sets x to None,Checks if obj has an attribute named x,Deletes attribute x,c,built_ins,0
-What is the time complexity of searching for an element in an unsorted list?,O(1),O(n),O(log n),O(n^2),b,data_structures,0
-What does sys.argv contain?,The system architecture,The Python version,A list of command-line arguments passed to the script,The current working directory,c,modules,0
-What module can be used for exact decimal arithmetic?,math,fractions,numbers,decimal,d,modules,0
-What does set.difference() return?,Elements in both sets,All unique elements,Elements in the first set but not in the second,Elements in neither set,c,data_types,0
-What is an event loop in asyncio?,A loop that handles keyboard events,The core scheduler that runs and manages coroutines,A loop that handles file I/O only,A loop that replaces threading,b,modules,0
-What is the ternary conditional expression in Python?,if x then y else z,x ? y : z,y if x else z,x if else y z,c,operators,0
-What does the open() function return?,A string,A list of lines,A bytes object,A file object,d,file_io,0
-What is function annotation in Python?,A way to enforce type checking,Metadata attached to parameters and return values using : and -> syntax,A docstring,A comment above a function,b,functions,0
-What is an abstract class?,A class imported from another module,A class that cannot be instantiated and is meant to be subclassed,A class with no attributes,A class with only static methods,b,OOP,0
-What is a classmethod typically used for?,Modifying instance variables,Providing alternative constructors or methods that operate on the class rather than instances,Making methods private,Overriding parent methods,b,OOP,0
-What does argparse.ArgumentParser do?,Parses JSON files,Parses Python source files,Provides a framework for parsing command-line arguments,Validates function arguments,c,modules,0
-What is method chaining?,Calling multiple methods on the same object in sequence,Defining methods inside other methods,Importing methods from another module,Calling a method on a parent class,a,OOP,0
-What does 'or' return in the expression 'a or b'?,Always the larger value,Always True,b if a is truthy — otherwise a,a if a is truthy — otherwise b,d,operators,0
-What is __init__.py used for?,Initializing variables,Marking a directory as a Python package,Defining the main function,Creating a virtual environment,b,modules,0
-What is a set comprehension?,A comprehension using square brackets,A comprehension that creates a list of unique values,"A comprehension using curly braces like {x for x in iterable}, producing a set",A comprehension that sorts values,c,comprehensions,0
-What does str.split() do?,Joins a list into a string,Splits a string into a list of substrings on a delimiter,Removes whitespace,Reverses a string,b,strings,0
-What is the output of 10 % 3?,3,0,1,3.33,c,operators,0
-What does @property allow you to do?,Create a read-only class,Define a class method,Access a method like an attribute,Make a method static,c,OOP,0
-What does the 'pass' statement do?,Skips the current iteration,Exits a function,Raises a silent exception,Acts as a placeholder that does nothing,d,syntax,0
-What does 'self' refer to in a class method?,The current instance of the class,The module the class is in,The parent class,The class itself,a,OOP,0
-Which of these creates an empty dictionary?,(),set(),{},[],c,dictionaries,0
-What does str.lstrip() do?,Removes leading whitespace or specified characters,Removes trailing whitespace,Removes all whitespace,Left-aligns the string,a,strings,0
-What is a property setter?,A method that deletes a property,A decorator that converts a method to a class variable,A method decorated with @property_name.setter that allows controlled assignment,A method that returns a property value,c,OOP,0
-What is unique about sets in Python?,They are immutable,They are ordered,They allow duplicate values,They contain only unique values,d,data_types,0
-What is the purpose of typing.Optional[int]?,Makes the variable optional,Indicates the value can be int or None,Creates a nullable integer,Makes the parameter have a default value,b,functions,0
-What does all() return?,True if at least one element is truthy,True if the iterable is not empty,True if all elements are truthy,True if no elements are falsy,c,built_ins,0
-What is a nested loop?,A loop that uses break,A loop with an else clause,A loop inside another loop,A loop that calls a function,c,control_flow,0
-How do you create a tuple with a single element?,x = (1),x = tuple(1),"x = (1,)",x = [1],c,data_types,0
-What does from module import * do?,Imports only private names,Imports all public names from a module into the current namespace,Imports the module object itself,Creates a copy of the module,b,modules,0
-What does the __name__ variable contain when a script is run directly?,The filename,The module name,__main__,None,c,modules,0
-What is the difference between deep copy and shallow copy?,There is no difference,Shallow copy duplicates everything; deep copy does not,Shallow copy shares nested objects; deep copy recursively duplicates all nested objects,Deep copy is faster,c,data_structures,0
-What is a strong reference vs a weak reference?,They are the same,A weak reference prevents garbage collection; a strong does not,A strong reference keeps an object alive; a weak reference does not prevent garbage collection,A weak reference is faster,c,data_structures,0
-What is a list comprehension?,A way to flatten a nested list,A way to sort a list in place,A concise syntax for building a list using a loop,A method to copy a list,c,comprehensions,1
-What is the difference between positional and keyword arguments?,There is no difference,Positional arguments are passed by position; keyword arguments are passed by name,Keyword arguments must come before positional arguments,Positional arguments are for classes only,b,functions,0
-What does the << operator do?,Left shift — shifts bits to the left,Less than comparison,String indentation,Assignment,a,operators,0
-What is tuple unpacking?,"Assigning each element of a tuple to separate variables, such as a, b = (1, 2)",Converting a tuple to a list,Removing elements from a tuple,Reversing a tuple,a,data_types,0
-What does the unittest module provide?,Unit conversion utilities,A framework for writing and running test cases,Performance testing tools,Code coverage analysis,b,modules,0
-What does __setitem__ allow?,Setting an attribute by name,Using assignment with indexing like obj[key] = value on a custom object,Setting the length of an object,Setting a class variable,b,OOP,0
-Can you use send() with a generator?,Yes — to send a value into the generator at the point of the yield expression,No — generators only produce values,Only with async generators,Only before the first yield,a,generators,0
-What happens if you open a non-existent file in r mode?,It creates the file,It returns None,It opens an empty file,It raises a FileNotFoundError,d,file_io,0
-What does await do inside a coroutine?,Calls a synchronous function,Blocks the entire program,Suspends the coroutine until the awaited result is ready,Imports a module asynchronously,c,syntax,0
-What is a mixin class?,A class that replaces inheritance,A class with no methods,"A small class that provides specific functionality through multiple inheritance, not meant to stand alone",A class that cannot be instantiated,c,OOP,0
-What does vars() return on a class instance?,The class's methods,A dictionary of the instance's attributes,The MRO,The class's annotations,b,built_ins,0
-What does the union of two sets return?,All unique elements from both sets,Elements in both sets,Elements only in the first set,Elements in neither set,a,data_types,0
-What is the difference between isinstance() and type() for type checking?,They are the same,isinstance() is deprecated,type() is preferred for subclasses,isinstance() is preferred because it respects inheritance; type() does exact type matching,d,built_ins,0
-What is a queue data structure?,A LIFO structure,A sorted structure,A FIFO (First In First Out) structure,A structure that allows random access,c,data_structures,0
-What does str.join() do?,Splits a string into a list,Finds the index of a substring,Combines a list of strings using the string as a separator,Adds a string to another string,c,strings,0
-What does dict.values() return?,A view of all values in the dictionary,A list of key-value pairs,A sorted list of values,A list of keys,a,dictionaries,0
-Which built-in function returns the largest value in a list?,max(),high(),largest(),top(),a,built_ins,0
-What does the ~ operator do in Python?,Logical NOT,Floor division,String reversal,Bitwise NOT — inverts all bits,d,operators,0
-What does the pickle module do?,Formats strings,Validates JSON,Serializes and deserializes Python objects to and from a byte stream,Compresses files,c,modules,0
-What is the difference between remove() and pop()?,They are identical,remove() takes a value; pop() takes an index and returns the removed item,remove() takes an index; pop() takes a value,pop() raises an error if the item is not found,b,lists,1
-What does collections.Counter do?,Counts to a specified number,Counts the occurrences of elements in an iterable and returns a dictionary-like object,Creates a counter variable,Counts files in a directory,b,modules,0
-What is a slot in __slots__?,A position in a queue,An attribute name that instances are allowed to have — replacing the instance __dict__,A method placeholder,A type annotation,b,OOP,0
-What does pip freeze do?,Stops all running Python processes,Outputs a list of installed packages and their versions,Freezes a virtual environment,Caches installed packages,b,modules,0
-What does using * in a function signature force?,All arguments to be positional,All arguments after * to be keyword-only,All arguments before * to be keyword,The function to accept unlimited arguments,b,functions,0
-What is the result of type([]) in Python?,<class 'set'>,<class 'dict'>,<class 'list'>,<class 'tuple'>,c,data_types,0
-What does 'elif' do?,Ends an if block,Defines an else branch that always runs,Checks an additional condition if the previous if/elif was False,Replaces the else clause,c,control_flow,0
-What does abs() return?,The integer floor of a number,The negative of a number,The square root of a number,The absolute value of a number,d,built_ins,0
-What does 'abc' * 3 produce?,An error,abcabcabc,abc3,"['abc','abc','abc']",b,strings,0
-"What does 'abc'.maketrans('a', 'x') do?",Replaces a with x in the string,Creates a translation table mapping a to x,Translates the string to binary,Creates a new string xbc,b,strings,0
-What is the output of bool('')?,True,None,Error,False,d,data_types,0
-What does the elif keyword do?,Ends an if block,Defines an alternative condition if the previous condition was False,Starts a loop,Defines a function,b,control_flow,0
-What is a recursive function?,A function that takes *args,A function that calls itself,A function with a decorator,A function that returns a list,b,functions,0
-What is an f-string in Python?,A file string for I/O operations,A formatted string literal prefixed with f that allows embedded expressions,A frozen string that cannot be modified,A function that returns a string,b,strings,0
-What does os.environ do?,Lists installed packages,Returns a mapping of environment variables,Returns the current working directory,Lists running processes,b,modules,0
-What is the difference between a module and a package?,They are the same,A module is a single .py file; a package is a directory containing modules and an __init__.py,A package is a single file; a module is a directory,Modules are for classes; packages are for functions,b,modules,0
-What does list.clear() do?,Deletes the list variable,Removes all items from the list,Resets items to None,Removes only duplicate items,b,lists,0
-What is the output of not True?,True,None,0,False,d,operators,0
-What is the difference between a list and a deque for queue operations?,They perform the same,Lists are faster for all operations,deque provides O(1) pops from the left vs O(n) for lists,deque is slower,c,data_structures,0
-What does [x for x in range(10) if x % 3 == 0] produce?,"[3, 6, 9]","[0, 3, 6, 9]","[1, 2, 4, 5, 7, 8]","[0, 1, 2, 3]",b,comprehensions,0
-What does collections.deque provide?,A database queue,A double-ended queue supporting efficient appends and pops from both ends,A sorted list,A priority queue,b,modules,0
-What does the logging module provide?,A way to print to the console,A flexible framework for emitting log messages with different severity levels,Error handling utilities,File writing utilities,b,modules,0
-"What does range(1, 10, 2) produce?","[1, 3, 5, 7, 9]","[1, 2, 3, 4, 5]","[2, 4, 6, 8, 10]","[1, 3, 5, 7]",a,control_flow,0
-What does the return statement do?,Prints a value,Exits the program,Ends a loop,Sends a value back from a function to the caller,d,functions,0
-What does yield from do?,Yields a single value,Delegates iteration to another iterable or sub-generator,Creates a new generator,Yields from a file,b,generators,0
-What does @staticmethod mean?,The method receives cls as its first argument,The method receives self as its first argument,The method belongs to an instance,The method belongs to the class but receives neither self nor cls,d,OOP,0
-What does io.StringIO do?,Reads a file as a stream,Creates an in-memory text stream that behaves like a file object,Converts strings to bytes,Encodes a string,b,modules,0
-What does __contains__ define?,How an object is iterated,How an object handles the 'del' keyword,The behavior of the 'in' operator for membership testing,How an object is hashed,c,OOP,0
-What is the average time complexity of looking up a key in a dictionary?,O(n),O(log n),O(1),O(n^2),c,data_structures,0
-What does sorted() with a key parameter do?,Sorts in reverse order,Sorts using a function to extract a comparison value from each item,Sorts only strings,Sorts in place,b,built_ins,0
-What is encapsulation?,When a function is wrapped by a decorator,The ability of a class to inherit from multiple parents,Bundling data and methods within a class and restricting direct access,When a method returns self,c,OOP,0
-What does datetime.datetime.now() return?,The current date only,The current time only,The current date and time,A Unix timestamp,c,modules,0
-What does __reduce__ define?,How an object is garbage collected,How an object is serialized by pickle,How an object is compared,How an object is printed,b,OOP,0
-What does complex() create in Python?,A complicated data structure,A complex number with real and imaginary parts,A compressed number,An encrypted number,b,data_types,0
-What does dict.popitem() do?,Removes a random item,Removes the first item,Removes and returns the last inserted key-value pair,Removes all items,c,dictionaries,0
-What is tail call optimization and does Python do it?,Yes — Python optimizes tail calls automatically,No — Python does not optimize tail calls and deep recursion will hit the recursion limit,Only in PyPy,Only with functools.reduce,b,functions,0
-What does __exit__ define in a context manager?,The destructor,How the object is printed,The behavior when exiting a with block — used for cleanup and optionally suppressing exceptions,The copy behavior,c,OOP,0
-What does shutil.copy() do?,Copies a directory,Moves a file,Copies a file to a destination,Copies the contents of a file to a string,c,modules,0
-What does __init_subclass__ allow?,Preventing subclassing,Initializing the parent class automatically,Customizing behavior when a class is subclassed without using a metaclass,Registering subclasses with a decorator,c,OOP,0
-What is monkey patching?,Modifying a class or module at runtime by adding or changing attributes or methods,A debugging technique,A type of inheritance,A testing framework feature,a,syntax,0
-What does file.readlines() do?,Reads only the first line,Reads the file one character at a time,Reads all lines into a list,Reads the entire file as a string,c,file_io,0
-What is a context manager?,A class that manages memory,An object that defines __enter__ and __exit__ for use with the with statement,A function that catches exceptions,A module that manages imports,b,syntax,0
 What does re.search() do?,Replaces a pattern in a string,Finds all occurrences of a pattern,Searches for the first occurrence of a pattern anywhere in the string,Only matches at the beginning of the string,c,modules,0
-What is a raw string in Python?,A string prefixed with r that treats backslashes as literal characters,A string that cannot be modified,An unformatted string,A string read from a file,a,strings,0
+What does zip() do?,Combines two or more iterables into tuples,Flattens a nested list,Compresses files,Sorts two lists simultaneously,a,built_ins,0
+What is an AttributeError?,An error when an import fails,An error when an index is out of range,An error when a key doesn't exist in a dict,An error when an attribute or method doesn't exist on an object,d,error_handling,0
+What does chained comparison like 1 < x < 10 do?,Raises a SyntaxError,Only works with integers,Evaluates left to right as separate comparisons joined by and,Checks if x equals 1 or 10,c,operators,0
+What is the result of type([]) in Python?,<class 'set'>,<class 'dict'>,<class 'list'>,<class 'tuple'>,c,data_types,0
+What is the difference between @staticmethod and @classmethod?,They are identical,@staticmethod receives cls; @classmethod receives nothing,@staticmethod receives no implicit first argument; @classmethod receives the class as cls,@classmethod cannot access class attributes,c,OOP,0
+"What does dict.setdefault(key, default) do?","Sets a key to default only if the key is not already present, and returns the value",Always overwrites the key with default,Removes the key if it exists,Returns True if the key has a default value,a,dictionaries,0
+What is composition in OOP?,Inheriting from multiple classes,Using global variables inside classes,Building complex objects by including instances of other classes as attributes,Defining multiple methods with the same name,c,OOP,0
+What does str.find() return if the substring is not found?,None,It raises an error,0,-1,d,strings,0
+What does abs() return?,The integer floor of a number,The negative of a number,The square root of a number,The absolute value of a number,d,built_ins,0
+What does re.findall() do?,Finds the first match,Returns a list of all non-overlapping matches of a pattern in a string,Replaces all matches,Splits a string by a pattern,b,modules,0
+What does the dataclasses.dataclass decorator do?,Creates a database table,"Automatically generates __init__, __repr__, and other methods for a class",Makes a class immutable,Converts a class to a dictionary,b,OOP,0
+What does the ^ operator do with integers?,Exponentiation,Bitwise XOR,Logical XOR,String formatting,b,operators,0
+"What does setattr(obj, 'x', 10) do?",Creates a new class,Sets the attribute x on obj to 10,Raises an error,Checks if obj has attribute x,b,built_ins,0
+What does sys.path contain?,All Python files,A list of directories Python searches when importing modules,The PATH environment variable,All installed packages,b,modules,0
+What does __delitem__ allow?,Deleting an attribute,Deleting an item using del obj[key] on a custom object,Deleting the entire object,Deleting a class,b,OOP,0
+What is a list comprehension?,A way to flatten a nested list,A way to sort a list in place,A concise syntax for building a list using a loop,A method to copy a list,c,comprehensions,1
+What is a list's underlying implementation in CPython?,A linked list,A hash table,A dynamic array,A binary tree,c,data_structures,0
+What does datetime.datetime.now() return?,The current date only,The current time only,The current date and time,A Unix timestamp,c,modules,0
+What does string interpolation with f-strings look like?,"f'Hello, {name}'","'Hello, ' + name","'Hello, %s' % name","format('Hello, {}', name)",a,strings,0
+What does str.center() do?,Centers the string in the console,Pads the string with a fill character to center it within a given width,Finds the middle character,Removes characters from both ends,b,strings,0
+What does isinstance() check?,If two objects are identical,If an object is a subclass,If an object is an instance of a given class or any of its subclasses,If a class is abstract,c,built_ins,0
+What does the >> operator do?,Greater than comparison,Right shift — shifts bits to the right,String de-indentation,Appends to a file,b,operators,0
+"What does open('file.txt', 'r+') do?",Opens for reading only,Opens for writing only,Opens for both reading and writing without truncating,Opens for appending,c,file_io,0
+What does file.write() do?,Writes a list to a file,Writes a string to the file,Writes bytes to the file,Writes a dictionary to the file,b,file_io,0
+What does round() do?,Floors a number,Ceils a number,Rounds a number to a given number of decimal places,Truncates decimal places,c,built_ins,0
+What is the difference between re.search() and re.fullmatch()?,They are identical,re.search() only checks the start; re.fullmatch() checks everywhere,re.search() finds a match anywhere in the string; re.fullmatch() requires the entire string to match,re.fullmatch() is deprecated,c,modules,0
+What is a namedtuple?,A dictionary with named keys,A tuple subclass with named fields accessible by name as well as index,A named variable,A tuple that can be modified,b,data_structures,0
+"What does set([1, 2, 2, 3]) return?","[1, 2, 3]","{1, 2, 2, 3}","{1, 2, 3}","(1, 2, 3)",c,data_types,0
+What does the hash() function do?,Encrypts a string,Returns the hash value of an object used in dictionaries and sets,Returns the memory address,Checks if an object is hashable,b,built_ins,1
+What does vars() return?,A list of variable names,The __dict__ of an object or the current local symbol table if no argument is given,All global variables,A count of local variables,b,built_ins,0
+What is method chaining?,Calling multiple methods on the same object in sequence,Defining methods inside other methods,Importing methods from another module,Calling a method on a parent class,a,OOP,0
+Can you have multiple except blocks for one try?,No — only one except is allowed,Only with finally,Only for the same exception type,"Yes, you can handle different exception types separately",d,error_handling,0
+"What is the output of sorted([3, 1, 2], reverse=True)?","[3, 2, 1]","[1, 2, 3]","[2, 1, 3]",Error,a,lists,0
+What does the open() function return?,A string,A list of lines,A bytes object,A file object,d,file_io,0
+"What is the result of len([1, [2, 3], 4])?",4,2,5,3,d,lists,0
+What does the % operator do in Python?,Divides two numbers,Returns the quotient,Returns the remainder of division,Raises to a power,c,operators,0
+What does itertools.chain() do?,Links two generators permanently,Chains function calls together,Chains multiple iterables into a single iterable,Creates an infinite loop,c,modules,0
+What is the difference between __new__ and __init__?,They are identical,__new__ creates the instance; __init__ initializes it,__init__ creates the instance; __new__ initializes it,__new__ is for class methods; __init__ is for instance methods,b,OOP,0
+What does collections.deque provide?,A database queue,A double-ended queue supporting efficient appends and pops from both ends,A sorted list,A priority queue,b,modules,0
+What is the difference between a module and a package?,They are the same,A module is a single .py file; a package is a directory containing modules and an __init__.py,A package is a single file; a module is a directory,Modules are for classes; packages are for functions,b,modules,0
+What does __set_name__ allow?,Renaming a class,A descriptor to know the attribute name it was assigned to on the class,Setting class-level constants,Renaming methods at runtime,b,OOP,0
+What does dict.get() do?,Returns the value for a key or a default if the key is missing,Raises an error if the key is missing,Removes a key-value pair,Returns all keys,a,dictionaries,0
+Which keyword is used to handle exceptions?,catch,try,handle,error,b,error_handling,0
