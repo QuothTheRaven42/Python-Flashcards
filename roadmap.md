@@ -4,12 +4,9 @@ FLASHCARD APP NOTES / ROADMAP
 PHASE 1: Bug Fixes & Robustness
 - Validate topic choice
 - Handle empty session safely
-- Validate CSV headers on load
-- Handle missing flashcards.csv file
 
 PHASE 2: Quality of Life
 - Auto-cap question count when user asks for too many
-- Sort topics alphabetically
 - Convert times_missed to int on load
 - Show detailed results (correct/wrong totals)
 - Add quit-early option during quiz
@@ -21,8 +18,4 @@ PHASE 3+: Features
 - Add card management (add/edit/delete/list)
 - Add session history and trend stats
 - Add argparse/menu-based CLI
-
-Notes:
-- Keep changes small and test after each one.
-- Commit each improvement separately when using git.
 """

@@ -99,13 +99,15 @@ def main():
     # Shuffle so questions appear in a different order each session
     random.shuffle(rows)
 
-    # Build a unique set of categories from the loaded data and prompt the user
-    topics = {row["category"] for row in rows}
+    # Build a unique set of categories from the loaded data, sort it, and prompt the user
+    topics = sorted({row["category"] for row in rows})
     print("Choose a topic:")
     for topic in topics:
         print("- " + topic)
     print("- all\n- missed")
 
+    # return topics to set for comparison operations
+    topics = set(topics)
     valid_choices = topics | {"all", "missed"}
     while True:
         choice = input("").strip()
